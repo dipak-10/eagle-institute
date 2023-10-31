@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <section>
+      <p
+        class="2xl:text-[70px] xl:text-[60px] lg:text-[55px] md:text-[40px] sm:text-[20px] text-[30px] font-semibold pt-8 text-center lg:py-16 md:py-10 sm:py-8 py-6"
+      >
+        Log In
+      </p>
+      <div
+        class="rounded-xl overflow-hidden signup-wrap bg-[#6F6AF808] flex justify-center px-3"
+      >
+        <div class="md:flex py-16 xl:mx-16">
+          <div class="xl:w-2/5 md:w-full lg:mx-10 md:mx-10 sm:mx-4 mx-0">
+            <div
+              class="signup-left-box py-12 lg:px-16 md:px-8 px-8 pb-0 bg-[#fff] rounded-[10px] shadow-xl"
+            >
+              <div class="flex justify-center">
+                <img src="images/login.png" alt="" />
+              </div>
+              <div class="flex flex-col py-4">
+                <div
+                  class="lg:text-[44px] md:text-[38px] text-[32px] font-semibold leading-snug py-4"
+                >
+                  Log In <br />
+                  registration form
+                </div>
+                <p
+                  class="lg:py-6 md:py-4 sm:py-3 lg:text-[24px] md:text-[20px] text-[18px] leading-relaxed pb-12"
+                  style="color: #000000b2"
+                >
+                  Our registration process is quick and easy, taking no more
+                  than 2 minutes to complete.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="xl:w-3/5 md:w-full">
+            <div
+              class="max-w-screen-md lg:mx-10 md:mx-10 sm:mx-4 mx-0 p-5 lg:pt-0 md:pt-0 pt-10"
+            >
+              <form class="w-full">
+                <div
+                  class="lg:text-[48px] md:text-[45px] text-[38px] font-[500] leading-snug"
+                >
+                  Get started
+                </div>
+                <p
+                  class="py-6 text-3xl leading-relaxed pb-10 text-slate-400 lg:pb-10 md:pb-10 pb-6"
+                ></p>
+                <div class="flex flex-wrap -mx-3 mb-4">
+                  <div class="w-full px-3">
+                    <label
+                      class="block tracking-wide text-gray-700 lg:text-2xl md:text-xl sm:text-xl text-lg font-bold mb-2"
+                      style="color: #011c3980"
+                      for="grid-Correct"
+                    >
+                      Email
+                    </label>
+                    <input
+                      class="appearance-none block w-full border border-gray-200 rounded py-3 px-4 mb-2 leading-tight shadow-md"
+                      id="grid-Correct"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label
+                      class="block tracking-wide text-gray-700 lg:text-2xl md:text-xl sm:text-xl text-lg font-bold mb-2"
+                      style="color: #011c3980"
+                      for="grid-Correct"
+                    >
+                      Password
+                    </label>
+                    <input
+                      class="appearance-none block w-full border border-gray-200 rounded py-3 px-4 mb-2 leading-tight shadow-md"
+                      id="grid-Correct"
+                      type="password"
+                    />
+                  </div>
+                </div>
+                <div class="flex justify-end -mx-3 mb-6">
+                  <p
+                    class="text-right text-[#011C3980] lg:text-2xl md:text-xl sm:text-xl text-xl font-[500] pt-5"
+                  >
+                    Forgot Password ?
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <button
+                      class="shadow w-full font-bold py-2 tracking-wide px-6 text-[20px] rounded bg-[#011C39] text-[#fff] shadow-md"
+                      type="submit"
+                    >
+                      Log In
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="{% static '/script/cdn.tailwindcss.com_3.3.3' %}" rel="stylesheet"></script>
+    <script src="{% static '/script/unpkg.com_@themesberg_flowbite@1.1.1_dist_flowbite.bundle.js' %}"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+{% endblock %}

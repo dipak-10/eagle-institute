@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/logo-t.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  font-family: "Jost", sans-serif;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: -6px;
+  top: 100%;
+  padding: 10px 10px 10px 20px;
+  background-color: white;
+  width: 175px;
+  z-index: 99;
+  display: none;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.banner-left-side {
+  background-color: #eee9e3;
+  position: relative;
+}
+.banner-left-side::after {
+  content: "";
+  background-image: url(../images/logo.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.1;
+}
+.banner-img {
+  position: absolute;
+  width: 35%;
+  bottom: -11px;
+  right: 0px;
+  border-radius: 10px;
+}
+.review-wraper .swiper-pagination-bullet {
+  background-color: transparent !important;
+}
+.footer-wraper {
+  background-color: #011c39;
+  color: #99a4b0;
+}
+/* --------------------------------vision-------------------------------- */
+
+.vision-img img {
+  height: 50%;
+  width: 90%;
+}
+/* --------------------------------course-------------------------------- */
+.course-wraper {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 30px;
+}
+.course-img {
+  position: relative;
+  overflow: hidden;
+}
+.course-layer {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: #160f08;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 0.5s linear;
+  transform: translate(0px, 25px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+}
+.course-img:hover .course-layer {
+  transform: translate(0px, 0px);
+  opacity: 0.8;
+}
+.course-img:hover .course-title {
+  color: #7b0048;
+}
+/* ----------------------------------blog---------------------------------- */
+.blog-box {
+  background-color: #f8f2f6;
+  border-radius: 6px;
+  /* margin: 15px; */
+  text-align: -webkit-center;
+  transition: all 0.3s linear;
+  padding: 20px;
+}
+.readMore-btn {
+  background-color: #7b0048;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.blog-contant {
+  transition: all 0.5s linear;
+  display: none;
+}
+.blog-title {
+  color: #7b0048;
+}
+.blog-box:hover .blog-contant {
+  display: inline-block;
+}
+.blog-box:hover .blog-img {
+  transform: translate(0px, -80px);
+  margin-bottom: -55px;
+}
+.blog-box:hover img {
+  transform: scale(0.9);
+}
+.blog-box img {
+  transition: all 0.5s linear;
+}
+.blog-box:hover {
+  transform: translate(0px, 30px);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ----------------------------------branch ----------------------------------*/
+.branch-wrapper {
+  background-color: #fafafa;
+}
+.branches-img {
+  position: relative;
+  overflow: hidden;
+  /* height: 750px; */
+}
+.branches-layer {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: #160f08;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 0.5s linear;
+  transform: translate(0px, 180px);
+  opacity: 0;
+}
+.branches-img:hover .branches-layer {
+  transform: translate(0px, 90px);
+  opacity: 0.8;
+}
+/* -----------------------------Review----------------------------- */
+.review-box {
+  background-color: #7b00480d;
+  padding: 20px;
+  text-align: center;
+  margin: 30px;
+  border-radius: 10px;
+}
+/* .review-img {
+  position: absolute;
+  top: -50px;
+  left: 37%;
+} */
+.review-box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+}
+.swiper-button-prev {
+  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)
+    no-repeat center center / contain;
+}
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next {
+  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper4.png)
+    no-repeat center center / contain;
+}
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev1,
+.swiper-button-next1 {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+}
+.swiper-button-prev1 {
+  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)
+    no-repeat center center / contain;
+}
+.swiper-button-prev1::after {
+  content: "";
+}
+
+.swiper-button-next1 {
+  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper4.png)
+    no-repeat center center / contain;
+}
+.swiper-button-next1::after {
+  content: "";
+}
+/*---------------------------------------------- swiper slider---------------------------------------------- */
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-next {
+  filter: grayscale(1);
+  width: 26px;
+  height: 26px;
+}
+.swiper-button-prev {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 60%;
+  left: 10px;
+}
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 60%;
+  right: 10px;
+}
+.swiper-button-prev1,
+.swiper-button-next1,
+.swiper-container-rtl .swiper-button-next {
+  filter: grayscale(1);
+  width: 26px;
+  height: 26px;
+}
+.swiper-button-prev1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 65%;
+  left: 10px;
+}
+.swiper-button-next1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 65%;
+  right: 10px;
+}
+
+/*------------------------------------------------- about-managment------------------------------------------------- */
+.about-managment {
+  background-image: url(../images/managment-bg.png);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

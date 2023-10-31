@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static '/fonts/stylesheet.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="bg-white border-gray-200  drop-shadow">
+            <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="{% static '/images/logo.png' %}" class="mr-3" alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+                        <li>
+                            <a href="/"
+                                class="block text-xl py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
+                                aria-current="page">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"
+                                class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About
+                                Us <i class="fa-solid fa-angle-down ps-1"></i></a>
+                            <div class="dropdown-menu shadow-lg">
+                                <ul>
+                                    <li class="py-2"><a href="#institute">Institute</a></li>
+                                    <li class="py-2"><a href="#mangement">Mangement</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"
+                                class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Education
+                                <i class="fa-solid fa-angle-down ps-1"></i></a>
+                            <div class="dropdown-menu shadow-lg">
+                                <ul>
+                                    <li class="py-2"><a href="#admition">Admition</a></li>
+                                    <li class="py-2"><a href="#course">Course</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="block text-xl py-2 pl-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
+                        </li>
+                        <li>
+                            <img src="{% static '/images/translate.png' %}" class="me-24">
+                        </li>
+                        <li>
+                            <button href="/login"
+                                class="block text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border border-black py-1 px-3">
+                                Sign in
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="lg:py-36 md:py-10 pt-16">
+        <section class="w-full  ">
+            <div class="rounded-xl  w-full">
+                <div class="mx-auto rounded-xl overflow-hidden w-full ">
+                    <div class="lg:flex md:flex-wrap justify-center rounded">
+                        <div class="p-8 banner-left-side xl:w-1/2 lg:w-full rounded-l-lg my-3 ">
+                            <img class="object-cover" src="{% static '/images/logo.png' %}" />
+                            <div class="text-6xl text-black font-bold py-4">
+                                Eagle Dimond Institute
+                            </div>
+
+                            <p class="mt-2 text-2xl text-black">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consectetur magnam optio ipsam provident, quo deserunt nam quam
+                                omnis quia et!
+                            </p>
+                        </div>
+                        <div class="md:shrink-0 ">
+                            <img class="w-full object-fill w-1/2 h-96  rounded-lg" src="{% static '/images/banner.png' %}"
+                                alt="Eagle Dimond" />
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </div>
+    <section class="px-3">
+        <p class="text-6xl font-semibold pt-8 text-center py-6">
+            Admission
+        </p>
+        <div class="  mx-auto rounded-xl overflow-hidden  ">
+            <div class="md:flex py-12">
+                <div class="ps-8 lg:w-2/5 md:w-full">
+                    <div class="admition-left-box pt-16 px-16 pb-40">
+                        <div class="text-5xl leading-snug pb-5">
+                            Start your<br />
+                            Journey with us.
+                        </div>
+                        <p class="py-6 text-2xl leading-relaxed pb-40">Lorem Ipsum is simply dummy<br />
+                            text of the printing and type<br />
+                            setting industry. Lorem</p>
+                    </div>
+                </div>
+                <div class=" lg:w-3/5  md:w-full">
+                    <div class="max-w-screen-md mx-auto p-5">
+                        <form class="w-full">
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-first-name">
+                                        First Name
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+                                        id="grid-first-name" type="text" placeholder="Jane">
+                                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                                </div>
+                                <div class="w-full md:w-1/2 px-3">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-last-name">
+                                        Last Name
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-last-name" type="text" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-Email">
+                                        Email
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+                                        id="grid-Email" type="text" placeholder=" Enter Email">
+                                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                                </div>
+                                <div class="w-full md:w-1/2 px-3">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-contact-number">
+                                        Contact Number
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-contact-number" type="text" placeholder="Contact Number">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-gender">
+                                        Gender
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+                                        id="grid-gender" type="text" placeholder=" Enter Gender">
+                                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                                </div>
+                                <div class="w-full md:w-1/2 px-3">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-contact-age">
+                                        Age
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-contact-age" type="text" placeholder="Age">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full px-3">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-Correct">
+                                        Correct working position
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-Correct" type="text" placeholder="Male">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full px-3">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-Correct">
+                                        Experience in correct working position
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-Correct" type="text" placeholder="Male">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full px-3">
+                                    <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-Correct">
+                                        Referance
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-Correct" type="text" placeholder="Male">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap -mx-3 mb-6">
+
+                                <div class=" w-full px-3">
+
+                                    <button class="shadow  font-bold py-2 px-6 rounded submit-btn" type="submit">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-wraper mt-5">
+        <div class="  mx-auto overflow-hidden  ">
+            <div class="md:flex">
+                <div class="lg:w-4/12 md:w-full">
+                    <div class="md:flex items-center">
+                        <img class="object-cover" src="{% static '/images/logo.png' %}" />
+                        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
+                            Eagle Dimond Institute
+                        </div>
+                    </div>
+                    <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
+                        About Us
+                    </div>
+                    <p class="text-lg">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever Lorem Ipsum is simply dummy text of the printing and
+                        typesetting.
+                    </p>
+                </div>
+                <div class="lg:w-4/12 md:w-full lg:ps-24 md:ps-0">
+                    <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
+                        Contact Us
+                    </div>
+                    <ul>
+                        <li class="md:flex items-start py-2 text-lg">
+                            <span class="pr-4"><i class="fa-sharp fa-solid fa-phone"></i>
+                            </span>
+                            <span>+91 95860 85697</span>
+                        </li>
+                        <li class="md:flex items-start py-2 text-lg">
+                            <span class="pr-4"><i class="fa-sharp fa-solid fa-envelope"></i>
+                            </span>
+                            <span>abc23@gmail.com</span>
+                        </li>
+                        <li class="md:flex items-start py-2 text-lg">
+                            <span class="pr-4"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            </span>
+                            <span>ABC Minibazar , varachha <br />
+                                main road, surat.</span>
+                        </li>
+                        <li class="md:flex items-start py-2 text-lg">
+                            <span class="pr-4"><i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                            <span>
+                                <span>Time : Mon - Fri 10AM - 20PM</span> <br />
+                                <span class="ps-12"> Sun 10AM - 2PM </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-4/12 md:w-full lg:ps-10 md:ps-0">
+                    <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
+                        Social
+                    </div>
+                    <div class="md:flex items-center py-2">
+                        <i class="fa-brands fa-facebook pr-4 text-2xl"></i>
+                        <i class="fa-brands fa-whatsapp pr-4 text-2xl"></i>
+                        <i class="fa-brands fa-twitter pr-4 text-2xl"></i>
+                        <i class="fa-brands fa-instagram pr-4 text-2xl"></i>
+                        <i class="fa-brands fa-youtube pr-4 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static '/script/cdn.tailwindcss.com_3.3.3' %}" rel="stylesheet"></script>
+    <script src="{% static '/script/unpkg.com_@themesberg_flowbite@1.1.1_dist_flowbite.bundle.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+
+</html>
