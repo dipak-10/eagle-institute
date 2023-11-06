@@ -69,14 +69,14 @@
       About Institute
     </p>
     <div class="  mx-auto rounded-xl overflow-hidden  ">
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6">
+      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6" id="classroomSection">
         <div class="p-4 lg:w-3/6  md:w-full flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full classImg" src="images/3.png" />
         </div>
         <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
           <p
-            class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0">
-            Class Room</p>
+            class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 class-title">
+            </p>
           <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
             <li>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -94,58 +94,38 @@
           </ul>
         </div>
       </div>
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0">
+      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="StaffSection">
         <div class="lg:w-3/6  md:w-full order-last flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full staffImg" src="images/3.png" />
         </div>
         <div class="lg:ps-8  ps-4 lg:w-3/6  md:w-full ">
           <p
-            class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 ">
+            class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 staff-title">
             Staff</p>
           <ul class="list-disc  lg:text-xl md:text-md text-md font-medium tracking-wide p-4 ">
-            <li>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-              text ever lorem Ipsum is simply.
-            </li>
-            <li class="py-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </li>
-            <li>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </li>
+            <li></li>
+            <li class="py-3"></li>
+            <li> </li>
           </ul>
         </div>
 
       </div>
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6">
+      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6" id="technologysection">
         <div class="lg:w-3/6  md:w-full flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full technoImg" src="images/3.png" />
         </div>
         <div class="lg:ps-0 md:ps-6 sm:ps-8 ps-4 lg:w-3/6  md:w-full">
           <p
-            class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-2 sm:pt-2 pt-0">
+            class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-2 sm:pt-2 pt-0 technoTitle">
             Technology</p>
           <ul class="list-disc  lg:text-xl md:text-md text-md font-medium tracking-wide p-4 ">
-            <li>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-              text ever lorem Ipsum is simply.
-            </li>
-            <li class="py-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </li>
-            <li>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </li>
+            <li> </li>
+            <li class="py-3"></li>
+            <li></li>
           </ul>
         </div>
       </div>
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0">
+      {% comment %} <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0">
         <div class="lg:w-3/6  md:w-full order-last flex justify-center">
           <img class="rounded-md lg:w-11/12 md:w-full w-full" src="images/3.png" />
         </div>
@@ -170,8 +150,7 @@
           </ul>
         </div>
 
-      </div>
-
+      </div> {% endcomment %}
     </div>
   </section>
 
@@ -247,6 +226,47 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+
+
+    fetch('/api/institute-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      // Handle the API response data here
+      //class room
+      const classroomSection = document.querySelector('#classroomSection')
+      classroomSection.querySelector('.class-title').textContent = data.institute_details[0].label
+     // classroomSection.querySelector('.classImg').src = data.institute_details[0].institute_image
+      classroomSection.querySelector('li:nth-child(1)').textContent = data.institute_details[0].description_line_1
+      classroomSection.querySelector('li:nth-child(2)').textContent = data.institute_details[0].description_line_2 // Update the second list item
+      classroomSection.querySelector('li:nth-child(3)').textContent = data.institute_details[0].description_line_3 // Update the third list item
+      //galaxy Section
+      const StaffSection = document.querySelector('#StaffSection')
+      StaffSection.querySelector('.staff-title').textContent = data.institute_details[1].label // Update the title
+     // StaffSection.querySelector('.staffImg').src = data.institute_details[1].institute_image // Update the title
+      StaffSection.querySelector('li:nth-child(1)').textContent = data.institute_details[1].description_line_1 // Update the first list item
+      StaffSection.querySelector('li:nth-child(2)').textContent = data.institute_details[1].description_line_2 // Update the second list item
+      StaffSection.querySelector('li:nth-child(3)').textContent = data.institute_details[1].description_line_3 // Update the third list item
+      //Micro Section
+      const technologysection = document.querySelector('#technologysection')
+      technologysection.querySelector('.technoTitle').textContent = data.institute_details[2].label // Update the title
+      //technologysection.querySelector('.technoImg').src = data.institute_details[2].institute_image // Update the title
+      technologysection.querySelector('li:nth-child(1)').textContent = data.institute_details[2].description_line_1 // Update the first list item
+      technologysection.querySelector('li:nth-child(2)').textContent = data.institute_details[2].description_line_2 // Update the second list item
+      technologysection.querySelector('li:nth-child(3)').textContent = data.institute_details[2].description_line_3 // Update the third list item
+      //Last Galaxy Section
+     // const lastGSection = document.querySelector('#lastGalaxySection')
+    // lastGSection.querySelector('.lastGalaxyTitle').textContent = data.institute_details[3].label // Update the title
+     // lastGSection.querySelector('.lastGalaxyImg').src = data.institute_details[3].institute_image // Update the title
+    //  lastGSection.querySelector('li:nth-child(1)').textContent = data.institute_details[3].description_line_1 // Update the first list item
+    // lastGSection.querySelector('li:nth-child(2)').textContent = data.institute_details[3].description_line_2 // Update the second list item
+     // lastGSection.querySelector('li:nth-child(3)').textContent = data.institute_details[3].description_line_3 // Update the third list item
+    //console.log(data.institute_details[3].institute_image, 'data')
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the request
+      console.error(error, 'PPPPPPPPPPPPPPPPP')
+    })
   </script>
 
 {% endblock %}
