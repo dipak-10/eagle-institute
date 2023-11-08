@@ -236,21 +236,21 @@
       //class room
       const classroomSection = document.querySelector('#classroomSection')
       classroomSection.querySelector('.class-title').textContent = data.institute_details[0].label
-     // classroomSection.querySelector('.classImg').src = data.institute_details[0].institute_image
+     classroomSection.querySelector('.classImg').src = data.institute_details[0].institute_image
       classroomSection.querySelector('li:nth-child(1)').textContent = data.institute_details[0].description_line_1
       classroomSection.querySelector('li:nth-child(2)').textContent = data.institute_details[0].description_line_2 // Update the second list item
       classroomSection.querySelector('li:nth-child(3)').textContent = data.institute_details[0].description_line_3 // Update the third list item
       //galaxy Section
       const StaffSection = document.querySelector('#StaffSection')
       StaffSection.querySelector('.staff-title').textContent = data.institute_details[1].label // Update the title
-     // StaffSection.querySelector('.staffImg').src = data.institute_details[1].institute_image // Update the title
+      StaffSection.querySelector('.staffImg').src = data.institute_details[1].institute_image // Update the title
       StaffSection.querySelector('li:nth-child(1)').textContent = data.institute_details[1].description_line_1 // Update the first list item
       StaffSection.querySelector('li:nth-child(2)').textContent = data.institute_details[1].description_line_2 // Update the second list item
       StaffSection.querySelector('li:nth-child(3)').textContent = data.institute_details[1].description_line_3 // Update the third list item
       //Micro Section
       const technologysection = document.querySelector('#technologysection')
       technologysection.querySelector('.technoTitle').textContent = data.institute_details[2].label // Update the title
-      //technologysection.querySelector('.technoImg').src = data.institute_details[2].institute_image // Update the title
+      technologysection.querySelector('.technoImg').src = data.institute_details[2].institute_image // Update the title
       technologysection.querySelector('li:nth-child(1)').textContent = data.institute_details[2].description_line_1 // Update the first list item
       technologysection.querySelector('li:nth-child(2)').textContent = data.institute_details[2].description_line_2 // Update the second list item
       technologysection.querySelector('li:nth-child(3)').textContent = data.institute_details[2].description_line_3 // Update the third list item

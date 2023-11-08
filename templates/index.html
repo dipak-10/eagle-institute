@@ -59,12 +59,12 @@
               </div>
             </div>
           </div>
-        </div>
-
-    </section>
-  </div>
+        </div>        
+      </div>
+    </section> 
+</div>
   <!-- vision -->
-  <section class="lg:mx-16 md:mx-10 sm:mx-8 mx-5 ">
+  <section class="lg:mx-16 md:mx-10 sm:mx-8 mx-5 " id="visionSection">
     <div
       class=" lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold text-[#011C39] text-center vision-heading">
       Our Vision
@@ -73,35 +73,22 @@
       <div class="md:flex  flex-wrap -mx-1 lg:-mx-4 py-8 lg:pb-18 md:pb-14 sm:pb-10 pb-10">
         <div class="p-4  w-full md:w-full lg:my-4 lg:px-4 lg:w-1/2  branch-box">
           <img
-            class="rounded-md drop-shadow-[4px 4px 15px 0px #00000059] lg:h-[30rem] md:h-[28rem] sm:h-[25rem] h-[18rem] w-full lg:pr-10 md:pr-0 pr-0"
+            class="rounded-md drop-shadow-[4px 4px 15px 0px #00000059] lg:h-[30rem] md:h-[28rem] sm:h-[25rem] h-[18rem] w-full lg:pr-10 md:pr-0 pr-0 visionImg"
             src="{% static '/images/1.png' %}" />
         </div>
         <div class="lg:p-4 md:p-2 p-2  w-full md:w-full lg:my-4 lg:px-4 lg:w-1/2   branch-box">
-          <p class="text-[32px] text-[#011C39] font-semibold pt-8 flex items-center sm:pt-0"><img src="{% static '/images/line2.png' %}"
-              class="w-20">Lorem Ipsum
-          </p>
+          <span class="text-[32px] text-[#011C39] font-semibold pt-8 flex items-center sm:pt-0 ">
+            <img src="{% static '/images/line2.png' %}" class="w-20 ">
+            <span class="vision-title"></span>
+          </span>
           <ul
             class="list-disc lg:text-[21px] md:text-[18px] sm:text-[18px] text-[20px]  tracking-wide lg:leading-10 md:leading-8 lg:pr-28 md:pr-10 sm:pr-0 pr-0 lg:p-8 md:p-6 sm:p-4 p-4 sm:ps-8 ps-6">
-            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]">
-              Lorem Ipsum is simply dummy text Lorem
-              Ipsum has been the industry's standard
-              dummy text ever Lorem Ipsum is simply
-            </li>
-            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]  py-5">
-              Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem
-            </li>
-            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]">
-              Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem
-            </li>
+            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]"> </li>
+            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]  py-5"></li>
+            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]">  </li>
           </ul>
         </div>
-
-
       </div>
-    </div>
-
     </div>
   </section>
   <!-- Courses -->
@@ -243,17 +230,16 @@
         Branch
       </p>
       <div class="md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]">
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   ">
+        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   " id="branchSection">
           <div class="branches-img">
-            <img class="rounded-md w-full h-3/6" src="{% static '/images/1.png' %}" />
+            <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
             <div class="branches-layer text-center">
               <div
                 class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
                 <div
-                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0">
+                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
                   Eagle Diamond
-                  Institute</div>
-                <div class="2xl:text-4xl xl:text-3xl lg:text-lg 2xl:py-2 text-[15px] xl:py-12xl:py-4 lg:py-1">Katargam
+                  Institute               
                 </div>
               </div>
               <div>
@@ -261,7 +247,7 @@
                   <li
                     class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                     <span>Address&nbsp;:-</span>
-                    <sapn>
+                    <sapn class="branch_address">
                       &nbsp;185 - Angani Compelx, Mini
                       Bazar, Varachha, Surat - 6.
                     </sapn>
@@ -269,8 +255,8 @@
                   <li
                     class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                     <span>Contact :-</span>
-                    <span>&nbsp;+91 986 278 953 <br />
-                      &nbsp; +0261 2658987</span>
+                    <span >&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
+                      &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
                   </li>
 
                 </ul>
@@ -278,17 +264,16 @@
             </div>
           </div>
         </div>
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   ">
+        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   " id="branchSection2">
           <div class="branches-img">
-            <img class="rounded-md w-full h-3/6" src="{% static '/images/1.png' %}" />
+            <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
             <div class="branches-layer text-center">
               <div
                 class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
                 <div
-                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0">
+                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
                   Eagle Diamond
-                  Institute</div>
-                <div class="2xl:text-4xl xl:text-3xl lg:text-lg 2xl:py-2 text-[15px] xl:py-12xl:py-4 lg:py-1">Katargam
+                  Institute Katargam
                 </div>
               </div>
               <div>
@@ -296,34 +281,33 @@
                   <li
                     class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                     <span>Address&nbsp;:-</span>
-                    <sapn>
+                    <sapn class="branch_address">
                       &nbsp;185 - Angani Compelx, Mini
                       Bazar, Varachha, Surat - 6.
                     </sapn>
                   </li>
                   <li
-                    class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                    <span>Contact :-</span>
-                    <span>&nbsp;+91 986 278 953 <br />
-                      &nbsp; +0261 2658987</span>
-                  </li>
+                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                  <span>Contact :-</span>
+                  <span >&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
+                    &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
+                </li>
 
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3  ">
+        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3  " id="branchSection3">
           <div class="branches-img">
-            <img class="rounded-md w-full h-3/6" src="{% static '/images/1.png' %}" />
+            <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
             <div class="branches-layer text-center">
               <div
                 class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
                 <div
-                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0">
+                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
                   Eagle Diamond
-                  Institute</div>
-                <div class="2xl:text-4xl xl:text-3xl lg:text-lg 2xl:py-2 text-[15px] xl:py-12xl:py-4 lg:py-1">Katargam
+                  Institute Katargam
                 </div>
               </div>
               <div>
@@ -331,7 +315,7 @@
                   <li
                     class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                     <span>Address&nbsp;:-</span>
-                    <sapn>
+                    <sapn class="branch_address">
                       &nbsp;185 - Angani Compelx, Mini
                       Bazar, Varachha, Surat - 6.
                     </sapn>
@@ -339,10 +323,9 @@
                   <li
                     class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                     <span>Contact :-</span>
-                    <span>&nbsp;+91 986 278 953 <br />
-                      &nbsp; +0261 2658987</span>
+                    <span >&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
+                      &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -360,16 +343,16 @@
       </p>
     </div>
     <div class="swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5 ">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide w-[530px] relative">
+      <div class="swiper-wrapper" >
+        <div class="swiper-slide w-[530px] relative" id="reviewSection">
           <div class="p-4  review-box ">
             <div
               class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
+              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
             </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
+            <div class="pt-16"> 
+              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
+              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
                 “Lorem Ipsum is d text of
                 the printing and type setting
                 Lorem Ipsum is d text of”
@@ -380,15 +363,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide w-[530px] relative">
+        <div class="swiper-slide w-[530px] relative" id="reviewSection2">
           <div class="p-4  review-box ">
             <div
               class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
+              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
             </div>
             <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
+              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
+              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
                 “Lorem Ipsum is d text of
                 the printing and type setting
                 Lorem Ipsum is d text of”
@@ -399,15 +382,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide w-[530px] relative">
+        <div class="swiper-slide w-[530px] relative" id="reviewSection3">
           <div class="p-4  review-box ">
             <div
               class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
+              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
             </div>
             <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
+              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
+              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
                 “Lorem Ipsum is d text of
                 the printing and type setting
                 Lorem Ipsum is d text of”
@@ -418,15 +401,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide w-[530px] relative">
+        <div class="swiper-slide w-[530px] relative" id="reviewSection4">
           <div class="p-4  review-box ">
             <div
               class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
+              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
             </div>
             <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
+              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
+              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
                 “Lorem Ipsum is d text of
                 the printing and type setting
                 Lorem Ipsum is d text of”
@@ -436,64 +419,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide w-[530px] relative">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
-            </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="images/star.png" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide w-[530px] relative">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
-            </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="images/star.png" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide w-[530px] relative">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img " />
-            </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="{% static '/images/star.png' %}" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>        
       </div>
     </div>
     <div class="swiper-button-prev"></div>
@@ -573,6 +499,80 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+    //vision API
+    fetch('/api/our-vision-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+       const classroomSection = document.querySelector('#visionSection')
+       classroomSection.querySelector('.vision-title').textContent = data.our_vision_details[0].vision_label
+       classroomSection.querySelector('.visionImg').src = data.our_vision_details[0].vision_image
+       classroomSection.querySelector('li:nth-child(1)').textContent = data.our_vision_details[0].vision_description_line_1
+       classroomSection.querySelector('li:nth-child(2)').textContent = data.our_vision_details[0].vision_description_line_2 
+       classroomSection.querySelector('li:nth-child(3)').textContent = data.our_vision_details[0].vision_description_line_3    
+    })
+    .catch((error) => {
+      console.error(error, 'PPPPPPPPPPPPPPPPP')
+    })
+    
+    //Review API
+    fetch('/api/review-details/') 
+    .then((response) => response.json())
+    .then((data) => {
+      console.error(data.customer_review_details, 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk')
+       const reviewSection = document.querySelector('#reviewSection')
+       reviewSection.querySelector('.review_name').textContent = data.customer_review_details[0].customer_name
+       reviewSection.querySelector('.review_img').src = data.customer_review_details[0].customer_image
+       reviewSection.querySelector('.reviewDescription').textContent = data.customer_review_details[0].customer_review
+       const reviewSection2 = document.querySelector('#reviewSection2')
+       reviewSection2.querySelector('.review_name').textContent = data.customer_review_details[1].customer_name
+       reviewSection2.querySelector('.review_img').src = data.customer_review_details[1].customer_image
+       reviewSection2.querySelector('.reviewDescription').textContent = data.customer_review_details[1].customer_review
+       const reviewSection3 = document.querySelector('#reviewSection3')
+       reviewSection3.querySelector('.review_name').textContent = data.customer_review_details[2].customer_name
+       reviewSection3.querySelector('.review_img').src = data.customer_review_details[2].customer_image
+       reviewSection3.querySelector('.reviewDescription').textContent = data.customer_review_details[2].customer_review
+       const reviewSection4 = document.querySelector('#reviewSection4')
+       reviewSection4.querySelector('.review_name').textContent = data.customer_review_details[3].customer_name
+       reviewSection4.querySelector('.review_img').src = data.customer_review_details[3].customer_image
+       reviewSection4.querySelector('.reviewDescription').textContent = data.customer_review_details[3].customer_review
+       
+    })
+    .catch((error) => {     
+      console.error(error)
+    })
+
+
+    //Branch API
+    fetch('/api/branch-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("HHHHHHHHH",data)
+      //section1
+       const branchSection = document.querySelector('#branchSection')
+       branchSection.querySelector('.branch_name').textContent = data.branch_details[0].branch_name
+       branchSection.querySelector('.branchImg').src = data.branch_details[0].branch_image
+       branchSection.querySelector('.branch_address').textContent = data.branch_details[0].branch_address
+       branchSection.querySelector('.branch_number_1').textContent = data.branch_details[0].branch_contact_number_1 
+       branchSection.querySelector('.branch_number_2').textContent = data.branch_details[0].branch_contact_number_2    
+      //section2
+       const branchSection2 = document.querySelector('#branchSection2')
+       branchSection2.querySelector('.branch_name').textContent = data.branch_details[1].branch_name
+       branchSection2.querySelector('.branchImg').src = data.branch_details[1].branch_image
+       branchSection2.querySelector('.branch_address').textContent = data.branch_details[1].branch_address
+       branchSection2.querySelector('.branch_number_1').textContent = data.branch_details[1].branch_contact_number_1 
+       branchSection2.querySelector('.branch_number_2').textContent = data.branch_details[1].branch_contact_number_2    
+      //section3
+       const branchSection3 = document.querySelector('#branchSection3')
+       branchSection3.querySelector('.branch_name').textContent = data.branch_details[2].branch_name
+       branchSection3.querySelector('.branchImg').src = data.branch_details[2].branch_image
+       branchSection3.querySelector('.branch_address').textContent = data.branch_details[2].branch_address
+       branchSection3.querySelector('.branch_number_1').textContent = data.branch_details[2].branch_contact_number_1 
+       branchSection3.querySelector('.branch_number_2').textContent = data.branch_details[2].branch_contact_number_2    
+    })
+    .catch((error) => {
+      console.error(error, 'PPPPPPPPPPPPPPPPP')
+    })
   </script>
 
   {% endblock %}

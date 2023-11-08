@@ -13,7 +13,42 @@
   <link rel="stylesheet" href="{% static '/fonts/stylesheet.css' %}" />
   <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" />
 </head>
+<style>
+  .skiptranslate iframe {
+    display: none !important;
+  }
 
+  .goog-te-gadget {
+    font-size: 0px !important;
+  }
+
+  .goog-te-gadget img {
+    display: none !important;
+  }
+
+  .goog-te-gadget a {
+    display: none !important;
+  }
+  .goog-te-gadget .goog-te-combo {
+    border: 1px solid black !important;
+}
+  body{
+    top:0 !important;
+  }
+  .banner {
+    background-image: url(../images/blog-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 90%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+</style>
 <body>
   <!-- header
    -->
@@ -67,9 +102,11 @@
               <a href="#"
                 class="block text-xl py-2 pl-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
             </li>
-            <li>
-              <img src="{% static '/images/translate.png' %}" class="me-24">
+            <li class="inline-flex aligns-center">
+             <span class="w-[40px]"> <img src="{% static '/images/translate.png' %}" class="me-24"></span>
+             <span>
               <div id="google_translate_element"></div>
+              <span>
             </li>
             <li>
               <button href="/login"
