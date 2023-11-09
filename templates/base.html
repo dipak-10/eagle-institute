@@ -193,7 +193,10 @@
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement(
-      {pageLanguage: 'en'},
+      {
+        pageLanguage: 'en', // Default language (English)
+        includedLanguages: 'gu,hi,en', // Specify the languages you want to be selectable (Gujarati, Hindi, English)
+      },
       'google_translate_element'
     );
   }
