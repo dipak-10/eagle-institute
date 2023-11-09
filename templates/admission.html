@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-    <!-- banner -->
-   <div class="xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
+     <!-- banner -->
+<div class="xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
     <section class="w-full  ">
       <div class="rounded-xl  w-full">
         <div class="mx-auto rounded-xl overflow-hidden w-full ">
           <div class="lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
             <div
               class="p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
-              <img class="object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]" src="images/banner-logo.png" />
+              <img class="object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]" src="{% static '/images/banner-logo.png' %}" />
               <div
                 class="lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
                 Eagle Dimond Institute
@@ -26,43 +26,32 @@
                 <!-- Slider main container -->
                 <div class="swiper-container rounded-[26px]">
                   <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper" id="bannerSection">
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg1"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg2"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg3"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg4"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg5"
+                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />                                 
+                     
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-    </section>
-  </div>
+        </div>        
+      </div>
+    </section> 
+</div>
     <!-- section -->
     <section class="px-3">
         <p class="text-6xl font-semibold pt-8 text-center py-6">
@@ -96,7 +85,7 @@
                                     </label>
                                     <input
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
-                                        name = 'first_name' id="grid-first-name" type="text">
+                                        name= 'first_name' id="grid-first-name" type="text">
                                 </div>
                                 <div class="w-full lg:w-1/2 px-3">
                                     <label class="block  tracking-wide text-gray-700 font-bold mb-2 text-[20px] "
@@ -277,6 +266,24 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+
+
+ //Banner API
+ fetch('/api/banner-images/') // Replace with the actual API URL
+ .then((response) => response.json())
+ .then((data) => {
+    const bannerSection = document.querySelector('#bannerSection')
+    bannerSection.querySelector('.bannerImg1').src = data.banner_images[0].banner_images
+    bannerSection.querySelector('.bannerImg2').src = data.banner_images[0].banner_images
+    bannerSection.querySelector('.bannerImg3').src = data.banner_images[0].banner_images
+    bannerSection.querySelector('.bannerImg4').src = data.banner_images[0].banner_images
+    bannerSection.querySelector('.bannerImg5').src = data.banner_images[0].banner_images
+ })
+ .catch((error) => {
+   console.error(error, 'PPPPPPPPPPPPPPPPP')
+ })
+
     </script>
 
     {% endblock %}

@@ -26,34 +26,23 @@
                 <!-- Slider main container -->
                 <div class="swiper-container rounded-[26px]">
                   <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper" id="bannerSection">
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg1"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg2"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg3"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg4"
                       src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
                     <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
+                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg5"
+                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />                                 
+                     
                   </div>
                 </div>
               </div>
@@ -101,54 +90,54 @@
       <div class="swiper mySwiper lg:py-[45px] md:py-[35px] sm:py-[30px]">
         <div class="swiper-wrapper">
           <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img">
+            <div class="p-4  course-img" id="manualPlanningSection">
               <div class="course-img">
-                <img class="rounded-md w-full" src="images/2.png" />
+                <img class="rounded-md w-full ManualImg" src="images/2.png" />
                 <div class="course-layer text-center"> <button href="#"
                     class="block text-xl  rounded text-white  border border-white py-1 px-3">
                     Click Here
                   </button></div> 
               </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title">Manual
+              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title Manual-title">Manual
                 Planning</div>
             </div>
           </div>
           <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img">
+            <div class="p-4  course-img" id="galaxySection">
               <div class="course-img">
-                <img class="rounded-md w-full" src="{% static '/images/course2.png' %}" />
+                <img class="rounded-md w-full galaxyImg" src="{% static '/images/course2.png' %}" />
                 <div class="course-layer text-center"> <button href="#"
                     class="block text-xl  rounded text-white  border border-white py-1 px-3">
                     Click Here
                   </button></div>
               </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title">Galaxy
+              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title galaxy-title">Galaxy
                 Planning</div>
             </div>
           </div>
           <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img">
+            <div class="p-4  course-img" id="Microsection">
               <div class="course-img">
-                <img class="rounded-md w-full" src="images/4.png" />
+                <img class="rounded-md w-full micro-img" src="images/4.png" />
                 <div class="course-layer text-center"> <button href="#"
                     class="block text-xl  rounded text-white  border border-white py-1 px-3">
                     Click Here
                   </button></div>
               </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title">Micro Essot
+              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title micro-title">Micro Essot
               </div>
             </div>
           </div>
           <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img">
+            <div class="p-4  course-img" id="policeSection">
               <div class="course-img">
-                <img class="rounded-md w-full" src="images/4.png" />
+                <img class="rounded-md w-full police-img" src="images/4.png" />
                 <div class="course-layer text-center"> <button href="#"
                     class="block text-xl  rounded text-white  border border-white py-1 px-3">
                     Click Here
                   </button></div>
               </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title">Police Essot
+              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title police-title">Police Essot
               </div>
             </div>
           </div>
@@ -165,15 +154,15 @@
         Our Blog
       </p>
       <div class="md:flex justify-center  flex-wrap  mx-1 lg:-mx-4  lg:py-12 md:py-8 sm:py-4 py-4">
-        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  ">
+        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  " id="blogSection">
           <div class="blog-box m-2">
             <div class="blog-img">
-              <img class="rounded-md w-5/6 " src="images/3.png" />
-              <div class="text-center text-2xl font-medium py-4 blog-title">
+              <img class="rounded-md w-5/6 blog_image" src="images/3.png" />
+              <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
                 Post1 Headline
               </div>
               <div class="text-center blog-contant">
-                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md">Lorem Ipsum is simply dummy text of the
+                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">Lorem Ipsum is simply dummy text of the
                   printing and typesetting
                   industry. Lorem Ipsum has been the industry's standard dummy
                   text</p>
@@ -182,15 +171,15 @@
             </div>
           </div>
         </div>
-        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  ">
+        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  "id="blogSection2">
           <div class="blog-box m-2">
             <div class="blog-img">
-              <img class="rounded-md w-5/6 " src="images/3.png" />
-              <div class="text-center text-2xl font-medium py-4 blog-title">
+              <img class="rounded-md w-5/6 blog_image" src="images/3.png" />
+              <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
                 Post1 Headline
               </div>
               <div class="text-center blog-contant">
-                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md">Lorem Ipsum is simply dummy text of the
+                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">Lorem Ipsum is simply dummy text of the
                   printing and typesetting
                   industry. Lorem Ipsum has been the industry's standard dummy
                   text</p>
@@ -199,15 +188,15 @@
             </div>
           </div>
         </div>
-        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  ">
+        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  "id="blogSection3">
           <div class="blog-box m-2">
             <div class="blog-img">
-              <img class="rounded-md w-5/6 " src="images/3.png" />
-              <div class="text-center text-2xl font-medium py-4 blog-title">
+              <img class="rounded-md w-5/6 blog_image" src="images/3.png" />
+              <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
                 Post1 Headline
               </div>
               <div class="text-center blog-contant">
-                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md">Lorem Ipsum is simply dummy text of the
+                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">Lorem Ipsum is simply dummy text of the
                   printing and typesetting
                   industry. Lorem Ipsum has been the industry's standard dummy
                   text</p>
@@ -500,6 +489,22 @@
       },
     });
 
+    //Banner API
+    fetch('/api/banner-images/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+       const bannerSection = document.querySelector('#bannerSection')
+       bannerSection.querySelector('.bannerImg1').src = data.banner_images[0].banner_images
+       bannerSection.querySelector('.bannerImg2').src = data.banner_images[0].banner_images
+       bannerSection.querySelector('.bannerImg3').src = data.banner_images[0].banner_images
+       bannerSection.querySelector('.bannerImg4').src = data.banner_images[0].banner_images
+       bannerSection.querySelector('.bannerImg5').src = data.banner_images[0].banner_images
+    })
+    .catch((error) => {
+      console.error(error, 'PPPPPPPPPPPPPPPPP')
+    })
+
+
     //vision API
     fetch('/api/our-vision-details/') // Replace with the actual API URL
     .then((response) => response.json())
@@ -573,6 +578,66 @@
     .catch((error) => {
       console.error(error, 'PPPPPPPPPPPPPPPPP')
     })
+
+//course API
+    fetch('/api/course-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data, 'dataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+      //manual Planning
+      const manualPlanningSection = document.querySelector('#manualPlanningSection')
+      manualPlanningSection.querySelector('.Manual-title').textContent = data.course_details[0].course_name
+      manualPlanningSection.querySelector('.ManualImg').src = data.course_details[0].course_image
+      
+      //galaxy Section
+      const galaxySection = document.querySelector('#galaxySection')
+      galaxySection.querySelector('.galaxy-title').textContent = data.course_details[1].course_name 
+      galaxySection.querySelector('.galaxyImg').src = data.course_details[1].course_image 
+     
+      //Micro Section
+      const microSection = document.querySelector('#Microsection')
+      microSection.querySelector('.micro-title').textContent = data.course_details[2].course_name 
+      microSection.querySelector('.micro-img').src = data.course_details[2].course_image 
+     
+      //Last Galaxy Section
+      const policeSection = document.querySelector('#policeSection')
+      policeSection.querySelector('.police-title').textContent = data.course_details[3].course_name 
+      policeSection.querySelector('.police-img').src = data.course_details[3].course_image 
+     
+      
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the request
+      console.error(error, 'PPPPPPPPPPPPPPPPP')
+    })
+
+    //Blog API
+    fetch('/api/blog-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("wwwwwwwwwwwwwwwwwww",data)
+      //section1
+       const blogSection = document.querySelector('#blogSection')
+       blogSection.querySelector('.blog_title').textContent = data.blog_details[0].blog_title
+       blogSection.querySelector('.blog_image').src = data.blog_details[0].blog_image
+       blogSection.querySelector('.blog_description').textContent = data.blog_details[0].blog_description 
+      //section2
+       const blogSection2 = document.querySelector('#blogSection2')
+       blogSection2.querySelector('.blog_title').textContent = data.blog_details[1].blog_title
+       blogSection2.querySelector('.blog_image').src = data.blog_details[1].blog_image
+       blogSection2.querySelector('.blog_description').textContent = data.blog_details[1].blog_description 
+      //section3
+       const blogSection3 = document.querySelector('#blogSection3')
+       blogSection3.querySelector('.blog_title').textContent = data.blog_details[2].blog_title
+       blogSection3.querySelector('.blog_image').src = data.blog_details[2].blog_image
+       blogSection3.querySelector('.blog_description').textContent = data.blog_details[2].blog_description 
+    })
+    .catch((error) => {
+      console.error(error, 'PPPPPPPPPPPPPPPPP')
+    })
+
+
+    
   </script>
 
   {% endblock %}
