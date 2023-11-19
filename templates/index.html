@@ -1,57 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-  <!-- banner -->
-<div class="xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
-    <section class="w-full  ">
-      <div class="rounded-xl  w-full">
-        <div class="mx-auto rounded-xl overflow-hidden w-full ">
-          <div class="lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
-            <div
-              class="p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
-              <img class="object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]" src="{% static '/images/banner-logo.png' %}" />
-              <div
-                class="lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
-                Eagle Dimond Institute
-              </div>
 
-              <p class="mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
-                Be silent in two situations When <span
-                  class="lg:inline-flex md:inline-flex sm:inline-flex hidden"><br /></span> you
-                feel one
-              </p>
-            </div>
-            <div class="md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
-              <div class="container">
-                <!-- Slider main container -->
-                <div class="swiper-container rounded-[26px]">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper" id="bannerSection">
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg1"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg2"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg3"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg4"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                    <img
-                      class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg5"
-                      src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />                                 
-                     
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-      </div>
-    </section> 
-</div>
   <!-- vision -->
   <section class="lg:mx-16 md:mx-10 sm:mx-8 mx-5 " id="visionSection">
     <div
@@ -60,21 +10,19 @@
     </div>
     <div class=" mx-auto rounded-xl overflow-hidden h-[inherit]">
       <div class="md:flex  flex-wrap -mx-1 lg:-mx-4 py-8 lg:pb-18 md:pb-14 sm:pb-10 pb-10">
-        <div class="p-4  w-full md:w-full lg:my-4 lg:px-4 lg:w-1/2  branch-box">
-          <img
-            class="rounded-md drop-shadow-[4px 4px 15px 0px #00000059] lg:h-[30rem] md:h-[28rem] sm:h-[25rem] h-[18rem] w-full lg:pr-10 md:pr-0 pr-0 visionImg"
-            src="{% static '/images/1.png' %}" />
+        <div class="p-4  w-full md:w-full lg:my-4 lg:px-4 lg:w-1/2  branch-box-banner">
+          <!-- Add Image -->
         </div>
         <div class="lg:p-4 md:p-2 p-2  w-full md:w-full lg:my-4 lg:px-4 lg:w-1/2   branch-box">
           <span class="text-[32px] text-[#011C39] font-semibold pt-8 flex items-center sm:pt-0 ">
-            <img src="{% static '/images/line2.png' %}" class="w-20 ">
+            <img src="{% static './images/line2.png' %}" class="w-20 ">
             <span class="vision-title"></span>
           </span>
           <ul
             class="list-disc lg:text-[21px] md:text-[18px] sm:text-[18px] text-[20px]  tracking-wide lg:leading-10 md:leading-8 lg:pr-28 md:pr-10 sm:pr-0 pr-0 lg:p-8 md:p-6 sm:p-4 p-4 sm:ps-8 ps-6">
-            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]"> </li>
+            <!-- <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]"> </li>
             <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]  py-5"></li>
-            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]">  </li>
+            <li class="lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]">  </li> -->
           </ul>
         </div>
       </div>
@@ -88,59 +36,8 @@
         Courses
       </p>
       <div class="swiper mySwiper lg:py-[45px] md:py-[35px] sm:py-[30px]">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img" id="manualPlanningSection">
-              <div class="course-img">
-                <img class="rounded-md w-full ManualImg" src="images/2.png" />
-                <div class="course-layer text-center"> <button href="#"
-                    class="block text-xl  rounded text-white  border border-white py-1 px-3">
-                    Click Here
-                  </button></div> 
-              </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title Manual-title">Manual
-                Planning</div>
-            </div>
-          </div>
-          <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img" id="galaxySection">
-              <div class="course-img">
-                <img class="rounded-md w-full galaxyImg" src="{% static '/images/course2.png' %}" />
-                <div class="course-layer text-center"> <button href="#"
-                    class="block text-xl  rounded text-white  border border-white py-1 px-3">
-                    Click Here
-                  </button></div>
-              </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title galaxy-title">Galaxy
-                Planning</div>
-            </div>
-          </div>
-          <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img" id="Microsection">
-              <div class="course-img">
-                <img class="rounded-md w-full micro-img" src="images/4.png" />
-                <div class="course-layer text-center"> <button href="#"
-                    class="block text-xl  rounded text-white  border border-white py-1 px-3">
-                    Click Here
-                  </button></div>
-              </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title micro-title">Micro Essot
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide w-[530px]">
-            <div class="p-4  course-img" id="policeSection">
-              <div class="course-img">
-                <img class="rounded-md w-full police-img" src="images/4.png" />
-                <div class="course-layer text-center"> <button href="#"
-                    class="block text-xl  rounded text-white  border border-white py-1 px-3">
-                    Click Here
-                  </button></div>
-              </div>
-              <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title police-title">Police Essot
-              </div>
-            </div>
-          </div>
+        <div class="swiper-wrapper" id="DomainSection">
+          
         </div>
       </div>
 
@@ -153,60 +50,8 @@
         class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8 ">
         Our Blog
       </p>
-      <div class="md:flex justify-center  flex-wrap  mx-1 lg:-mx-4  lg:py-12 md:py-8 sm:py-4 py-4">
-        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  " id="blogSection">
-          <div class="blog-box m-2">
-            <div class="blog-img">
-              <img class="rounded-md w-5/6 blog_image" src="images/3.png" />
-              <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
-                Post1 Headline
-              </div>
-              <div class="text-center blog-contant">
-                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">Lorem Ipsum is simply dummy text of the
-                  printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text</p>
-                <button class="readMore-btn">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  "id="blogSection2">
-          <div class="blog-box m-2">
-            <div class="blog-img">
-              <img class="rounded-md w-5/6 blog_image" src="images/3.png" />
-              <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
-                Post1 Headline
-              </div>
-              <div class="text-center blog-contant">
-                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">Lorem Ipsum is simply dummy text of the
-                  printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text</p>
-                <button class="readMore-btn">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  "id="blogSection3">
-          <div class="blog-box m-2">
-            <div class="blog-img">
-              <img class="rounded-md w-5/6 blog_image" src="images/3.png" />
-              <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
-                Post1 Headline
-              </div>
-              <div class="text-center blog-contant">
-                <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">Lorem Ipsum is simply dummy text of the
-                  printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text</p>
-                <button class="readMore-btn">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
+      <div class="md:flex justify-center  flex-wrap  mx-1 lg:-mx-4  lg:py-12 md:py-8 sm:py-4 py-4" id="blogsection">
+        
       </div>
     </div>
   </section>
@@ -218,109 +63,8 @@
         class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold flex justify-center lg:py-10 md:py-8 sm:py-4 py-4 ">
         Branch
       </p>
-      <div class="md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]">
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   " id="branchSection">
-          <div class="branches-img">
-            <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
-            <div class="branches-layer text-center">
-              <div
-                class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
-                <div
-                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
-                  Eagle Diamond
-                  Institute               
-                </div>
-              </div>
-              <div>
-                <ul>
-                  <li
-                    class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                    <span>Address&nbsp;:-</span>
-                    <sapn class="branch_address">
-                      &nbsp;185 - Angani Compelx, Mini
-                      Bazar, Varachha, Surat - 6.
-                    </sapn>
-                  </li>
-                  <li
-                    class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                    <span>Contact :-</span>
-                    <span >&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
-                      &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   " id="branchSection2">
-          <div class="branches-img">
-            <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
-            <div class="branches-layer text-center">
-              <div
-                class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
-                <div
-                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
-                  Eagle Diamond
-                  Institute Katargam
-                </div>
-              </div>
-              <div>
-                <ul>
-                  <li
-                    class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                    <span>Address&nbsp;:-</span>
-                    <sapn class="branch_address">
-                      &nbsp;185 - Angani Compelx, Mini
-                      Bazar, Varachha, Surat - 6.
-                    </sapn>
-                  </li>
-                  <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Contact :-</span>
-                  <span >&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
-                    &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
-                </li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3  " id="branchSection3">
-          <div class="branches-img">
-            <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
-            <div class="branches-layer text-center">
-              <div
-                class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
-                <div
-                  class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
-                  Eagle Diamond
-                  Institute Katargam
-                </div>
-              </div>
-              <div>
-                <ul>
-                  <li
-                    class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                    <span>Address&nbsp;:-</span>
-                    <sapn class="branch_address">
-                      &nbsp;185 - Angani Compelx, Mini
-                      Bazar, Varachha, Surat - 6.
-                    </sapn>
-                  </li>
-                  <li
-                    class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                    <span>Contact :-</span>
-                    <span >&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
-                      &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]" id="branchSection">
+        <!--  Add branch section -->
       </div>
     </div>
   </section>
@@ -332,83 +76,8 @@
       </p>
     </div>
     <div class="swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5 ">
-      <div class="swiper-wrapper" >
-        <div class="swiper-slide w-[530px] relative" id="reviewSection">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
-            </div>
-            <div class="pt-16"> 
-              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="{% static '/images/star.png' %}" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide w-[530px] relative" id="reviewSection2">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
-            </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="images/star.png" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide w-[530px] relative" id="reviewSection3">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
-            </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="images/star.png" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide w-[530px] relative" id="reviewSection4">
-          <div class="p-4  review-box ">
-            <div
-              class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
-              <img src="{% static '/images/user.png' %}" class="rounded-full review-img review_img" />
-            </div>
-            <div class="pt-16">
-              <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
-              <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
-                “Lorem Ipsum is d text of
-                the printing and type setting
-                Lorem Ipsum is d text of”
-              </div>
-              <div class="flex justify-center py-4 ">
-                <img src="images/star.png" class="w-3/5 block" />
-              </div>
-            </div>
-          </div>
-        </div>        
+      <div class="swiper-wrapper" id="reviewSection">
+                
       </div>
     </div>
     <div class="swiper-button-prev"></div>
@@ -416,7 +85,7 @@
   </section>
   <!-- Testimonials end -->
 
-  <script src="{% static '/script/cdn.tailwindcss.com_3.3.3/' %}" rel="stylesheet"></script>
+  <script src="{% static '/script/cdn.tailwindcss.com_3.3.3/'%}" rel="stylesheet"></script>
   <!-- header -->
   <script src="{% static '/script/unpkg.com_@themesberg_flowbite@1.1.1_dist_flowbite.bundle.js' %}"></script>
   <script src="{% static '/script/cdn.jsdelivr.net_gh_alpinejs_alpine@v2.x.x_dist_alpine.min.js' %}" defer></script>
@@ -489,62 +158,76 @@
       },
     });
 
-    //Banner API
-    fetch('/api/banner-images/') // Replace with the actual API URL
-    .then((response) => response.json())
-    .then((data) => {
-       const bannerSection = document.querySelector('#bannerSection')
-       bannerSection.querySelector('.bannerImg1').src = data.banner_images[0].banner_images
-       bannerSection.querySelector('.bannerImg2').src = data.banner_images[0].banner_images
-       bannerSection.querySelector('.bannerImg3').src = data.banner_images[0].banner_images
-       bannerSection.querySelector('.bannerImg4').src = data.banner_images[0].banner_images
-       bannerSection.querySelector('.bannerImg5').src = data.banner_images[0].banner_images
-    })
-    .catch((error) => {
-      console.error(error, 'PPPPPPPPPPPPPPPPP')
-    })
+    
 
 
     //vision API
     fetch('/api/our-vision-details/') // Replace with the actual API URL
     .then((response) => response.json())
     .then((data) => {
-       const classroomSection = document.querySelector('#visionSection')
-       classroomSection.querySelector('.vision-title').textContent = data.our_vision_details[0].vision_label
-       classroomSection.querySelector('.visionImg').src = data.our_vision_details[0].vision_image
-       classroomSection.querySelector('li:nth-child(1)').textContent = data.our_vision_details[0].vision_description_line_1
-       classroomSection.querySelector('li:nth-child(2)').textContent = data.our_vision_details[0].vision_description_line_2 
-       classroomSection.querySelector('li:nth-child(3)').textContent = data.our_vision_details[0].vision_description_line_3    
+      const classroomSection = document.querySelector('#visionSection')
+      const branch_box_banner = document.querySelector('.branch-box-banner')
+      const tracking_wide= document.querySelector(".tracking-wide");
+      if(data['message'] == "success"){
+        const imageElement = document.createElement('img');
+        imageElement.className = 'rounded-md drop-shadow-[4px 4px 15px 0px #00000059] lg:h-[30rem] md:h-[28rem] sm:h-[25rem] h-[18rem] w-full lg:pr-10 md:pr-0 pr-0 visionImg';
+        imageElement.src = data.our_vision_details.vision_image;
+        branch_box_banner.appendChild(imageElement)
+        classroomSection.querySelector('.vision-title').textContent = data.our_vision_details.vision_label
+        for (let i = 1; i <= 4; i++) {
+            const descriptionLine = data.our_vision_details[`vision_description_line_${i}`];
+            if (descriptionLine) {
+                const listItem = document.createElement('li');
+                listItem.className = "lg:leading-[28px] md:leading-[25px] sm:leading-[22px] leading-[20px]";
+                listItem.textContent = descriptionLine;
+                if (i === 2) {
+                    listItem.classList.add('py-5');
+                }
+                tracking_wide.appendChild(listItem);
+            }
+        }
+      }else{
+        console.log("Our vision details api is not working")
+      }  
     })
     .catch((error) => {
-      console.error(error, 'PPPPPPPPPPPPPPPPP')
+      console.error(error, 'Our vision details api error')
     })
     
     //Review API
     fetch('/api/review-details/') 
     .then((response) => response.json())
     .then((data) => {
-      console.error(data.customer_review_details, 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk')
-       const reviewSection = document.querySelector('#reviewSection')
-       reviewSection.querySelector('.review_name').textContent = data.customer_review_details[0].customer_name
-       reviewSection.querySelector('.review_img').src = data.customer_review_details[0].customer_image
-       reviewSection.querySelector('.reviewDescription').textContent = data.customer_review_details[0].customer_review
-       const reviewSection2 = document.querySelector('#reviewSection2')
-       reviewSection2.querySelector('.review_name').textContent = data.customer_review_details[1].customer_name
-       reviewSection2.querySelector('.review_img').src = data.customer_review_details[1].customer_image
-       reviewSection2.querySelector('.reviewDescription').textContent = data.customer_review_details[1].customer_review
-       const reviewSection3 = document.querySelector('#reviewSection3')
-       reviewSection3.querySelector('.review_name').textContent = data.customer_review_details[2].customer_name
-       reviewSection3.querySelector('.review_img').src = data.customer_review_details[2].customer_image
-       reviewSection3.querySelector('.reviewDescription').textContent = data.customer_review_details[2].customer_review
-       const reviewSection4 = document.querySelector('#reviewSection4')
-       reviewSection4.querySelector('.review_name').textContent = data.customer_review_details[3].customer_name
-       reviewSection4.querySelector('.review_img').src = data.customer_review_details[3].customer_image
-       reviewSection4.querySelector('.reviewDescription').textContent = data.customer_review_details[3].customer_review
-       
+      const reviewSection = document.querySelector('#reviewSection');
+      if(data['message'] == "success"){
+        for(let i=0;i<=data['customer_review_details'].length;i++){
+          const reviewSlider = document.createElement("div");
+          reviewSlider.className = "swiper-slide w-[530px] relative"
+          reviewSlider.innerHTML = `
+              <div class="p-4  review-box ">
+                <div
+                  class="flex justify-center absolute 2xl:top-[-20px] 2xl:left-[40%] xl:top-[-20px] xl:left-[35%] lg:top-[-25px] lg:left-[37%] md:top-[-30px] md:left-[34%] sm:top-[-25px] sm:left-[31%] top-[-30px] left-[31%]">
+                  <img src="${data['customer_review_details'][i]['customer_image']}" class="rounded-full review-img review_img" />
+                </div>
+                <div class="pt-16"> 
+                  <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
+                  <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
+                    “${data['customer_review_details'][i]['customer_review']}”
+                  </div>
+                  <div class="flex justify-center py-4 ">
+                    <img src="{% static '/images/star.png' %}" class="w-3/5 block" />
+                  </div>
+                </div>
+              </div>
+          `
+          reviewSection.appendChild(reviewSlider)
+        }
+      }else{
+        console.log("Review details api data is not found")
+      }  
     })
     .catch((error) => {     
-      console.error(error)
+      console.error(error,"Review details api is not working")
     })
 
 
@@ -552,85 +235,118 @@
     fetch('/api/branch-details/') // Replace with the actual API URL
     .then((response) => response.json())
     .then((data) => {
-      console.log("HHHHHHHHH",data)
-      //section1
-       const branchSection = document.querySelector('#branchSection')
-       branchSection.querySelector('.branch_name').textContent = data.branch_details[0].branch_name
-       branchSection.querySelector('.branchImg').src = data.branch_details[0].branch_image
-       branchSection.querySelector('.branch_address').textContent = data.branch_details[0].branch_address
-       branchSection.querySelector('.branch_number_1').textContent = data.branch_details[0].branch_contact_number_1 
-       branchSection.querySelector('.branch_number_2').textContent = data.branch_details[0].branch_contact_number_2    
-      //section2
-       const branchSection2 = document.querySelector('#branchSection2')
-       branchSection2.querySelector('.branch_name').textContent = data.branch_details[1].branch_name
-       branchSection2.querySelector('.branchImg').src = data.branch_details[1].branch_image
-       branchSection2.querySelector('.branch_address').textContent = data.branch_details[1].branch_address
-       branchSection2.querySelector('.branch_number_1').textContent = data.branch_details[1].branch_contact_number_1 
-       branchSection2.querySelector('.branch_number_2').textContent = data.branch_details[1].branch_contact_number_2    
-      //section3
-       const branchSection3 = document.querySelector('#branchSection3')
-       branchSection3.querySelector('.branch_name').textContent = data.branch_details[2].branch_name
-       branchSection3.querySelector('.branchImg').src = data.branch_details[2].branch_image
-       branchSection3.querySelector('.branch_address').textContent = data.branch_details[2].branch_address
-       branchSection3.querySelector('.branch_number_1').textContent = data.branch_details[2].branch_contact_number_1 
-       branchSection3.querySelector('.branch_number_2').textContent = data.branch_details[2].branch_contact_number_2    
+      const branchSection = document.querySelector("#branchSection");
+      if(data['message'] == "success"){
+        for(let i=0;i<=data['branch_details'].length;i++){
+          const branchSlider = document.createElement("div");
+          branchSlider.className = "p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   "
+          branchSlider.innerHTML = `
+              <div class="branches-img">
+                <img class="rounded-md w-full h-3/6 branchImg" src="${data['branch_details'][i]['branch_image']}" />
+                <div class="branches-layer text-center">
+                  <div
+                    class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
+                    <div
+                      class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
+                      ${data['branch_details'][i]['branch_name']}              
+                    </div>
+                  </div>
+                  <div>
+                    <ul>
+                      <li
+                        class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                        <span>Address&nbsp;:-</span>
+                        <sapn class="branch_address">
+                          &nbsp;${data['branch_details'][i]['branch_address']}
+                        </sapn>
+                      </li>
+                      <li
+                        class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                        <span>Contact :-</span>
+                        <span >&nbsp;<span class="branch_number_1">${data['branch_details'][i]['branch_contact_number_1']}</span> <br />
+                          &nbsp;<span class="branch_number_2">${data['branch_details'][i]['branch_contact_number_2']}<span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          `
+          branchSection.appendChild(branchSlider)
+        }
+        
+      }else{
+        console.log("Branch details api data is not found")
+      } 
     })
     .catch((error) => {
-      console.error(error, 'PPPPPPPPPPPPPPPPP')
+      console.error(error, 'Branch details api is not working')
     })
 
 //course API
     fetch('/api/course-details/') // Replace with the actual API URL
     .then((response) => response.json())
     .then((data) => {
-      console.log(data, 'dataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
-      //manual Planning
-      const manualPlanningSection = document.querySelector('#manualPlanningSection')
-      manualPlanningSection.querySelector('.Manual-title').textContent = data.course_details[0].course_name
-      manualPlanningSection.querySelector('.ManualImg').src = data.course_details[0].course_image
-      
-      //galaxy Section
-      const galaxySection = document.querySelector('#galaxySection')
-      galaxySection.querySelector('.galaxy-title').textContent = data.course_details[1].course_name 
-      galaxySection.querySelector('.galaxyImg').src = data.course_details[1].course_image 
-     
-      //Micro Section
-      const microSection = document.querySelector('#Microsection')
-      microSection.querySelector('.micro-title').textContent = data.course_details[2].course_name 
-      microSection.querySelector('.micro-img').src = data.course_details[2].course_image 
-     
-      //Last Galaxy Section
-      const policeSection = document.querySelector('#policeSection')
-      policeSection.querySelector('.police-title').textContent = data.course_details[3].course_name 
-      policeSection.querySelector('.police-img').src = data.course_details[3].course_image 
-     
-      
+      const swiper_wrapper= document.querySelector("#DomainSection");
+      if(data["message"] == "success"){
+        for(let i=0;i <= data['course_details'].length;i++){
+          const swiperSlide = document.createElement("div");
+          swiperSlide.className = "swiper-slide w-[530px]";
+          swiperSlide.innerHTML = `
+              <div class="p-4 course-img" id="${data['course_details'][i]['course_name']}Section">
+                <div class="course-img">
+                  <img class="rounded-md w-full ManualImg" src="${data['course_details'][i]['course_image']}" alt="${data['course_details'][i]['course_name']}load image"/>
+                  <div class="course-layer text-center">
+                    <button href="#" class="block text-xl rounded text-white border border-white py-1 px-3">
+                      Click Here
+                    </button>
+                  </div>
+                </div>
+                <div class="xl:text-4xl md:text-3xl text-2xl font-medium text-center py-8 pt-10 course-title Manual-title">
+                  ${data['course_details'][i]['course_name']}
+                </div>
+              </div>
+            `;
+          swiper_wrapper.appendChild(swiperSlide);
+        }
+      }else{
+        console.log("Course details data is not found")
+      }      
     })
     .catch((error) => {
-      // Handle any errors that occur during the request
-      console.error(error, 'PPPPPPPPPPPPPPPPP')
+      console.error(error, 'Course details api is not working')
     })
 
     //Blog API
     fetch('/api/blog-details/') // Replace with the actual API URL
     .then((response) => response.json())
     .then((data) => {
-      console.log("wwwwwwwwwwwwwwwwwww",data)
-      //section1
-       const blogSection = document.querySelector('#blogSection')
-       blogSection.querySelector('.blog_title').textContent = data.blog_details[0].blog_title
-       blogSection.querySelector('.blog_image').src = data.blog_details[0].blog_image
-       blogSection.querySelector('.blog_description').textContent = data.blog_details[0].blog_description 
-      //section2
-       const blogSection2 = document.querySelector('#blogSection2')
-       blogSection2.querySelector('.blog_title').textContent = data.blog_details[1].blog_title
-       blogSection2.querySelector('.blog_image').src = data.blog_details[1].blog_image
-       blogSection2.querySelector('.blog_description').textContent = data.blog_details[1].blog_description 
-      //section3
-       const blogSection3 = document.querySelector('#blogSection3')
-       blogSection3.querySelector('.blog_title').textContent = data.blog_details[2].blog_title
-       blogSection3.querySelector('.blog_image').src = data.blog_details[2].blog_image
-       blogSection3.querySelector('.blog_description').textContent = data.blog_details[2].blog_description 
+      const blogSection = document.querySelector("#blogsection");
+      if(data['message'] == "success"){
+        for(let i=0;i<= data['blog_details'].length;i++){
+          const blogSlide = document.createElement("div");
+          blogSlide.className = "p-4  w-full md:w-[44%]  lg:w-[30%] lg:px-4 md:px-4 px-0 lg:my-4  "
+          blogSlide.innerHTML = `
+              <div class="blog-box m-2">
+                <div class="blog-img">
+                  <img class="rounded-md w-5/6 blog_image" src="${data['blog_details'][i]['blog_image']}" />
+                  <div class="text-center text-2xl font-medium py-4 blog-title blog_title">
+                    ${data['blog_details'][i]['blog_title']}
+                  </div>
+                  <div class="text-center blog-contant">
+                    <p class="py-3 lg:text-xl md:text-md sm:text-md sm:text-md blog_description">
+                      ${data['blog_details'][i]['blog_description']}  
+                    </p>
+                    <button class="readMore-btn">Read More</button>
+                  </div>
+                </div>
+              </div>
+          `;
+          blogSection.appendChild(blogSlide);
+        }
+      }else{
+        console.log("blog details data is not found data")
+      }
+      
     })
     .catch((error) => {
       console.error(error, 'PPPPPPPPPPPPPPPPP')

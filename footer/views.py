@@ -11,13 +11,10 @@ from rest_framework.response import Response
 class GetFooterdataAPIView(APIView):
 
     def get(self, request):
-        footer_contact_details = FooterContactDetails.objects.all()
-        social_links_data = SocialMediaLinks.objects.all()
-        contact_details_serializer = FooterContactDetailsSerializer(
-                footer_contact_details, many=True)
-        social_links_serializer = SocialMediaLinksSerializer(
-            social_links_data, many=True          
-        )
+        footer_contact_details = FooterContactDetails.objects.all().order_by('-id').first()
+        social_links_data = SocialMediaLinks.objects.all().order_by('-id').first()
+        contact_details_serializer = FooterContactDetailsSerializer(footer_contact_details)
+        social_links_serializer = SocialMediaLinksSerializer(social_links_data)
         return Response(
                 {"message": "success", 
                  "footer_contact_details": contact_details_serializer.data,

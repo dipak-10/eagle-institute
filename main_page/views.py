@@ -21,9 +21,8 @@ def login(request):
 class OurVisionDataAPIView(APIView):
 
     def get(self, request):
-        our_vision_details = OurVision.objects.all()
-        our_vision_details_serializer = OurVisionSerializer(
-                our_vision_details, many=True)
+        our_vision_details = OurVision.objects.all().order_by('-id').first()
+        our_vision_details_serializer = OurVisionSerializer(our_vision_details)
         return Response(
                 {"message": "success", 
                  "our_vision_details": our_vision_details_serializer.data},

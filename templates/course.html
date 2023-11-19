@@ -2,64 +2,14 @@
 {% load static %}
 {% block content %}
 
-    <!-- banner -->
-<div class="xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
-  <section class="w-full  ">
-    <div class="rounded-xl  w-full">
-      <div class="mx-auto rounded-xl overflow-hidden w-full ">
-        <div class="lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
-          <div
-            class="p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
-            <img class="object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]" src="{% static '/images/banner-logo.png' %}" />
-            <div
-              class="lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
-              Eagle Dimond Institute
-            </div>
-
-            <p class="mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
-              Be silent in two situations When <span
-                class="lg:inline-flex md:inline-flex sm:inline-flex hidden"><br /></span> you
-              feel one
-            </p>
-          </div>
-          <div class="md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
-            <div class="container">
-              <!-- Slider main container -->
-              <div class="swiper-container rounded-[26px]">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper" id="bannerSection">
-                  <img
-                    class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg1"
-                    src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                  <img
-                    class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg2"
-                    src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                  <img
-                    class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg3"
-                    src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                  <img
-                    class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg4"
-                    src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />
-                  <img
-                    class="w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg5"
-                    src="{% static '/images/banner.png' %}" alt="Eagle Dimond" />                                 
-                   
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>        
-    </div>
-  </section> 
-</div>
+ 
   <!-- section -->
   <section class="px-3 xl:mx-16 md:mx-8">
     <p class="text-6xl font-semibold pt-8 text-center py-6">Course</p>
     <div class="mx-auto rounded-xl overflow-hidden">
       <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6" id="manualPlanningSection">
         <div class="p-4 lg:w-3/6 md:w-full flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full ManualImg" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full ManualImg" src="{% static './images/3.png' %}" />
         </div>
         <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
           <p class="Manual-title lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0"></p>
@@ -72,7 +22,7 @@
       </div>
       <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="galaxySection">
         <div class="lg:w-3/6 md:w-full order-last flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full galaxyImg" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full galaxyImg" src="{% static './images/3.png' %}" />
         </div>
         <div class="lg:ps-8 ps-4 lg:w-3/6 md:w-full">
           <p class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 galaxy-title"></p>
@@ -87,7 +37,7 @@
     <div class="mx-auto rounded-xl overflow-hidden" id="Microsection">
       <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6">
         <div class="p-4 lg:w-3/6 md:w-full flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full micro-img" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full micro-img" src="{% static './images/3.png' %}" />
         </div>
         <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
           <p class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 micro-title"></p>
@@ -100,7 +50,7 @@
       </div>
       <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="lastGalaxySection">
         <div class="lg:w-3/6 md:w-full order-last flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full lastGalaxyImg" src="images/3.png" />
+          <img class="rounded-md lg:w-11/12 md:w-full w-full lastGalaxyImg" src="{% static './images/3.png' %}" />
         </div>
         <div class="lg:ps-8 ps-4 lg:w-3/6 md:w-full">
           <p class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 lastGalaxyTitle"></p>
@@ -186,25 +136,10 @@
       }
     })
     
- //Banner API
- fetch('/api/banner-images/') // Replace with the actual API URL
- .then((response) => response.json())
- .then((data) => {
-    const bannerSection = document.querySelector('#bannerSection')
-    bannerSection.querySelector('.bannerImg1').src = data.banner_images[0].banner_images
-    bannerSection.querySelector('.bannerImg2').src = data.banner_images[0].banner_images
-    bannerSection.querySelector('.bannerImg3').src = data.banner_images[0].banner_images
-    bannerSection.querySelector('.bannerImg4').src = data.banner_images[0].banner_images
-    bannerSection.querySelector('.bannerImg5').src = data.banner_images[0].banner_images
- })
- .catch((error) => {
-   console.error(error, 'PPPPPPPPPPPPPPPPP')
- })
-
-
-    fetch('/api/course-details/') // Replace with the actual API URL
+    fetch('http://127.0.0.1:8000/api/course-details/') // Replace with the actual API URL
       .then((response) => response.json())
       .then((data) => {
+        console.log(data,"data is >>>>>>>>>>>>>>>>")
         // Handle the API response data here
         //manual Planning
         const manualPlanningSection = document.querySelector('#manualPlanningSection')

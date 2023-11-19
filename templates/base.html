@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Egale Daimond</title>
   <link rel="stylesheet" href="{% static '/css/all.min.css' %}" type="text/css" />
-  <link rel="stylesheet" href="{% static '/css/cdnjs.cloudflare.com_ajax_libs_Swiper_3.4.1_css_swiper.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static '/css/cdnjs.cloudflare.com_ajax_libs_Swiper_3.4.1_css_swiper.min.css' %}"
+    type="text/css" />
   <link rel="stylesheet" type="text/css" href="{% static '/css/swiper-bundle.min.css' %}">
   <!-- review slider -->
   <link rel="stylesheet" type="text/css" href="{% static '/css/unpkg.com_swiper@8.4.7_swiper-bundle.min.css' %}">
@@ -29,12 +31,15 @@
   .goog-te-gadget a {
     display: none !important;
   }
+
   .goog-te-gadget .goog-te-combo {
     border: 1px solid black !important;
-}
-  body{
-    top:0 !important;
   }
+
+  body {
+    top: 0 !important;
+  }
+
   .banner {
     background-image: url(../images/blog-banner.png);
     background-size: cover;
@@ -49,6 +54,7 @@
     flex-direction: column;
   }
 </style>
+
 <body>
   <!-- header
    -->
@@ -103,10 +109,10 @@
                 class="block text-xl py-2 pl-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
             </li>
             <li class="inline-flex aligns-center">
-             <span class="w-[40px]"> <img src="{% static '/images/translate.png' %}" class="me-24"></span>
-             <span>
-              <div id="google_translate_element"></div>
+              <span class="w-[40px]"> <img src="{% static '/images/translate.png' %}" class="me-24"></span>
               <span>
+                <div id="google_translate_element"></div>
+                <span>
             </li>
             <li>
               <button href="/login"
@@ -119,71 +125,50 @@
       </div>
     </nav>
   </header>
+
+  <div class="xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
+    <section class="w-full  ">
+      <div class="rounded-xl  w-full">
+        <div class="mx-auto rounded-xl overflow-hidden w-full ">
+          <div class="lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
+            <div
+              class="p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
+              <img
+                class="object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]"
+                src="{% static '/images/banner-logo.png' %}" />
+              <div
+                class="lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
+                Eagle Dimond Institute
+              </div>
+
+              <p class="mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
+                Be silent in two situations When <span
+                  class="lg:inline-flex md:inline-flex sm:inline-flex hidden"><br /></span> you
+                feel one
+              </p>
+            </div>
+            <div class="md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
+              <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper-container rounded-[26px]">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper" id="bannerSection">
+                    <!-- Images add -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   {% block content %}{% endblock %}
   <!-- footer -->
   <footer class="footer-wraper mt-5 p-10">
     <div class=" mx-auto overflow-hidden ">
-      <div class="md:flex lg:mx-16 md:8">
-        <div class="lg:w-4/12 md:w-full pr-2" id="footer">
-          <div class="md:flex items-center">
-            <img class="object-cover" src="{% static '/images/logo.png' %}" />
-            <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
-              Eagle Dimond Institute
-            </div>
-          </div>
-          <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
-            About Us
-          </div>
-          <p class="text-lg lg:pr-16 md:pr-0 about_us">
-            Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever Lorem
-            Ipsum is simply printing and typesetting industry.
-          </p>
-        </div>
-        <div class="lg:w-4/12 md:w-full lg:ps-24 md:ps-0">
-          <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
-            Contact Us
-          </div>
-          <ul>
-            <li class="md:flex items-start py-2 text-lg">
-              <span class="pr-4"><i class="fa-sharp fa-solid fa-phone"></i>
-              </span>
-              <span>+91 95860 85697</span>
-            </li>
-            <li class="md:flex items-start py-2 text-lg">
-              <span class="pr-4"><i class="fa-sharp fa-solid fa-envelope"></i>
-              </span>
-              <span>abc23@gmail.com</span>
-            </li>
-            <li class="md:flex items-start py-2 text-lg">
-              <span class="pr-4"><i class="fa-sharp fa-solid fa-location-dot"></i>
-              </span>
-              <span>ABC Minibazar , varachha
-                main road, surat.</span>
-            </li>
-            <li class="md:flex items-start py-2 text-lg">
-              <span class="pr-4"><i class="fa-solid fa-calendar-days"></i>
-              </span>
-              <span>
-                <span>Time : Mon - Fri 10AM - 20PM</span>
-                <span class="lg:ps-12 md:ps-12  ps-3"> Sun 10AM - 2PM </span>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="lg:w-4/12 md:w-full lg:ps-10 md:ps-0">
-          <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
-            Social
-          </div>
-          <div class="md:flex items-center py-2">
-            <a class="cursor-pointer"> <i class="fa-brands fa-facebook pr-4 text-2xl"></i></a>
-           <a class="cursor-pointer"> <i class="fa-brands fa-whatsapp pr-4 text-2xl"></i></a>
-           <a class="cursor-pointer"> <i class="fa-brands fa-twitter pr-4 text-2xl"></i></a>
-           <a class="cursor-pointer"> <i class="fa-brands fa-instagram pr-4 text-2xl"></i></a>
-           <a class="cursor-pointer"> <i class="fa-brands fa-youtube pr-4 text-2xl"></i></a>
-          </div>
-        </div>
+      <div class="md:flex lg:mx-16 md:8" id="footer">
+
       </div>
     </div>
   </footer>
@@ -202,24 +187,106 @@
   }
 </script>
 
-<script type="text/javascript"
-    src=
-"https://translate.google.com/translate_a/element.js?
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit">
 </script>
 <script>
+  //Banner API
+  fetch('/api/banner-images/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      const bannerSection = document.querySelector('#bannerSection')
+      if (data['message'] == "success") {
+        for (let i = 0; i < data['banner_images'].length; i++) {
+          let Imageurl = data['banner_images'][i]["banner_images"];
+          const imageElement = document.createElement('img');
+          imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
+          imageElement.src = Imageurl;
+          bannerSection.appendChild(imageElement);
+        }
+      } else {
+        const imageElement = document.createElement('img');
+        imageElement.alt = "Not found image"
+        bannerSection.appendChild(imageElement);
+      }
+    })
+    .catch((error) => {
+      console.error(error, 'Banner image api error is')
+    })
+
+
+
+
   //Footer API
   fetch('/api/footer-details/') // Replace with the actual API URL
-  .then((response) => response.json())
-  .then((data) => {
-    console.log("xxxxxxxxx",data)
-    //section1
-     const footer = document.querySelector('#footer')
-     footer.querySelector('.about_us').textContent = data.footer_contact_details[0].about_us
-    
-  })
-  .catch((error) => {
-    console.error(error, 'PPPPPPPPPPPPPPPPP')
-  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data['message'] == "success") {
+        const footer = document.querySelector('#footer')
+        // footer.querySelector('.about_us').textContent = data.footer_contact_details[0].about_us
+        footer.innerHTML = `
+      <div class="lg:w-4/12 md:w-full pr-2">
+        <div class="md:flex items-center">
+          <img class="object-cover" src="{% static '/images/logo.png' %}" />
+          <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
+            Eagle Dimond Institute
+          </div>
+        </div>
+        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
+          About Us
+        </div>
+        <p class="text-lg lg:pr-16 md:pr-0 about_us">
+          ${data.footer_contact_details.about_us}
+        </p>
+      </div>
+      <div class="lg:w-4/12 md:w-full lg:ps-24 md:ps-0">
+        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
+          Contact Us
+        </div>
+        <ul>
+          <li class="md:flex items-start py-2 text-lg">
+            <span class="pr-4"><i class="fa-sharp fa-solid fa-phone"></i>
+            </span>
+            <span>${data.footer_contact_details.contact_number}</span>
+          </li>
+          <li class="md:flex items-start py-2 text-lg">
+            <span class="pr-4"><i class="fa-sharp fa-solid fa-envelope"></i>
+            </span>
+            <span>${data.footer_contact_details.email_address}</span>
+          </li>
+          <li class="md:flex items-start py-2 text-lg">
+            <span class="pr-4"><i class="fa-sharp fa-solid fa-location-dot"></i>
+            </span>
+            <span>${data.footer_contact_details.address}</span>
+          </li>
+          <li class="md:flex items-start py-2 text-lg">
+            <span class="pr-4"><i class="fa-solid fa-calendar-days"></i>
+            </span>
+            <span>
+              <span>${data.footer_contact_details.time}</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:w-4/12 md:w-full lg:ps-10 md:ps-0">
+        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
+          Social
+        </div>
+        <div class="md:flex items-center py-2">
+          <a class="cursor-pointer" href="https://www.facebook.com/${data.social_links_data.facebook}" target="_blank"> <i class="fa-brands fa-facebook pr-4 text-2xl"></i></a>
+          <a class="cursor-pointer" href="https://twitter.com/${data.social_links_data.twitter}" target="_blank"> <i class="fa-brands fa-whatsapp pr-4 text-2xl"></i></a>
+          <a class="cursor-pointer" href="https://www.instagram.com/${data.social_links_data.instagram}" target="_blank"> <i class="fa-brands fa-twitter pr-4 text-2xl"></i></a>
+          <a class="cursor-pointer" href="https://wa.me/${data.social_links_data.whatsapp}" target="_blank"> <i class="fa-brands fa-instagram pr-4 text-2xl"></i></a>
+          <a class="cursor-pointer" href="https://www.youtube.com/c/${data.social_links_data.youtube}" target="_blank"> <i class="fa-brands fa-youtube pr-4 text-2xl"></i></a>
+        </div>
+      </div>
+    `} else {
+        console.log("footer data is not found")
+      }
+    })
+    .catch((error) => {
+      console.error(error, 'Footer details api is not working')
+    })
 </script>
+
 </html>
