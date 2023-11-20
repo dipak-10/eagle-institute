@@ -4,7 +4,7 @@
 
  
   <!-- section -->
-  <section class="px-3 xl:mx-16 md:mx-8">
+  {% comment %} <section class="px-3 xl:mx-16 md:mx-8">
     <p class="text-6xl font-semibold pt-8 text-center py-6">Course</p>
     <div class="mx-auto rounded-xl overflow-hidden">
       <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6" id="manualPlanningSection">
@@ -61,6 +61,15 @@
           </ul>
         </div>
       </div>
+    </div>
+  </section> {% endcomment %}
+
+  <section class="px-3 lg:mx-16 md:mx-10 sm:mx-8 mx-5">
+    <p class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold pt-8 text-center py-6">
+      Course
+    </p>
+    <div class="  mx-auto rounded-xl overflow-hidden  " id="classroomSection">
+      
     </div>
   </section>
   <script src="{% static '/script/cdn.tailwindcss.com_3.3.3' %}" rel="stylesheet"></script>
@@ -136,44 +145,57 @@
       }
     })
     
-    fetch('http://127.0.0.1:8000/api/course-details/') // Replace with the actual API URL
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data,"data is >>>>>>>>>>>>>>>>")
-        // Handle the API response data here
-        //manual Planning
-        const manualPlanningSection = document.querySelector('#manualPlanningSection')
-        manualPlanningSection.querySelector('.Manual-title').textContent = data.course_details[0].course_name
-        manualPlanningSection.querySelector('.ManualImg').src = data.course_details[0].course_image
-        manualPlanningSection.querySelector('li:nth-child(1)').textContent = data.course_details[0].course_description_line_1
-        manualPlanningSection.querySelector('li:nth-child(2)').textContent = data.course_details[0].course_description_line_2 // Update the second list item
-        manualPlanningSection.querySelector('li:nth-child(3)').textContent = data.course_details[0].course_description_line_3 // Update the third list item
-        //galaxy Section
-        const galaxySection = document.querySelector('#galaxySection')
-        galaxySection.querySelector('.galaxy-title').textContent = data.course_details[1].course_name // Update the title
-        galaxySection.querySelector('.galaxyImg').src = data.course_details[1].course_image // Update the title
-        galaxySection.querySelector('li:nth-child(1)').textContent = data.course_details[1].course_description_line_1 // Update the first list item
-        galaxySection.querySelector('li:nth-child(2)').textContent = data.course_details[1].course_description_line_2 // Update the second list item
-        galaxySection.querySelector('li:nth-child(3)').textContent = data.course_details[1].course_description_line_3 // Update the third list item
-        //Micro Section
-        const microSection = document.querySelector('#Microsection')
-        microSection.querySelector('.micro-title').textContent = data.course_details[2].course_name // Update the title
-        microSection.querySelector('.micro-img').src = data.course_details[2].course_image // Update the title
-        microSection.querySelector('li:nth-child(1)').textContent = data.course_details[2].course_description_line_1 // Update the first list item
-        microSection.querySelector('li:nth-child(2)').textContent = data.course_details[2].course_description_line_2 // Update the second list item
-        microSection.querySelector('li:nth-child(3)').textContent = data.course_details[2].course_description_line_3 // Update the third list item
-        //Last Galaxy Section
-        const lastGSection = document.querySelector('#lastGalaxySection')
-        lastGSection.querySelector('.lastGalaxyTitle').textContent = data.course_details[3].course_name // Update the title
-        lastGSection.querySelector('.lastGalaxyImg').src = data.course_details[3].course_image // Update the title
-        lastGSection.querySelector('li:nth-child(1)').textContent = data.course_details[3].course_description_line_1 // Update the first list item
-        lastGSection.querySelector('li:nth-child(2)').textContent = data.course_details[3].course_description_line_2 // Update the second list item
-        lastGSection.querySelector('li:nth-child(3)').textContent = data.course_details[3].course_description_line_3 // Update the third list item
-        console.log(data.course_details[3].course_image, 'data')
-      })
-      .catch((error) => {
-        // Handle any errors that occur during the request
-        console.error(error, 'PPPPPPPPPPPPPPPPP')
-      })
+
+      fetch('/api/course-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data, "data is >>>>>>>>>>>>>>>.")
+      const classroomSection = document.querySelector('#classroomSection')
+      if (data['message'] == 'success') {
+        for (let i = 0; i <= data['course_details'].length; i++) {
+          const classChildSection = document.createElement("div")
+          classChildSection.className = "md:flex lg:py-10 md:py-8 sm:py-6 py-6"
+          classChildSection.innerHTML = `
+            <div class="p-4 lg:w-3/6  md:w-full flex justify-center" id="imageElement">
+                <img class="rounded-md lg:w-11/12 md:w-full w-full classImg" src="${data['course_details'][i]["course_image"]}" />
+            </div>
+            <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full" id="sectionElement">
+                <p
+                  class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 class-title">${data['course_details'][i]["course_name"]}
+                  </p>
+                <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4" id="Description">
+                  
+                </ul>
+            </div>
+          `;
+          let Description = classChildSection.querySelector("#Description");
+          for (let no = 1; no <= 4; no++) {
+            const descriptionLine = data['course_details'][i][`course_description_line_${no}`];
+            if (descriptionLine) {
+                const listItem = document.createElement('li');
+                listItem.textContent = descriptionLine;
+                if (no === 2) {
+                    listItem.className = 'py-3'
+                }
+                Description.appendChild(listItem);
+            }
+          }
+          if (i % 2 !== 0) {
+              classChildSection.classList.add("md:w-full");
+              let imageElement = classChildSection.querySelector("#imageElement");
+              imageElement.className = "lg:w-3/6  md:w-full order-last flex justify-center"
+              let sectionElement = classChildSection.querySelector("#sectionElement");
+              sectionElement.className = "lg:ps-8  ps-4 lg:w-3/6  md:w-full "
+          }
+          classroomSection.appendChild(classChildSection);
+        }
+      }else{
+        console.log("Course details data is not found")
+      }
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the request
+      console.error(error, 'Course details api is not working')
+    })
   </script>
 {% endblock %}

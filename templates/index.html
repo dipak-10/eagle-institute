@@ -210,7 +210,7 @@
                   <img src="${data['customer_review_details'][i]['customer_image']}" class="rounded-full review-img review_img" />
                 </div>
                 <div class="pt-16"> 
-                  <p class="text-3xl font-semibold py-2 review_name">John Sutil</p>
+                  <p class="text-3xl font-semibold py-2 review_name">${data['customer_review_details'][i]['customer_name']}</p>
                   <div class="lg:text-[20px] md:txt-[18px] sm:text-[18px] text-[15px] text-[#00000080] py-2 reviewDescription">
                     “${data['customer_review_details'][i]['customer_review']}”
                   </div>
@@ -242,7 +242,7 @@
           branchSlider.className = "p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   "
           branchSlider.innerHTML = `
               <div class="branches-img">
-                <img class="rounded-md w-full h-3/6 branchImg" src="${data['branch_details'][i]['branch_image']}" />
+                <img class="rounded-md w-full xl:h-[25rem] lg:h-[20rem]  md:h-[20rem] sm:h-[30rem] branchImg" src="${data['branch_details'][i]['branch_image']}" />
                 <div class="branches-layer text-center">
                   <div
                     class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">

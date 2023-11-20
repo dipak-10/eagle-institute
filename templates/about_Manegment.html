@@ -19,7 +19,7 @@
     <div class="mx-auto rounded-xl overflow-hidden">
       <div
         class="md:flex justify-center flex-wrap  xl:mx-[45px] 2xl:mx-[50px] lg:mx-[30px] md:mx-[30px] sm:mx-[30px] mx-[25px] lg:py-8 md:py-8 sm:py-2 py-2">
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3 " id="founder1">
+        {% comment %} <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3 " id="founder1">
           <div class="branches-img founder-img">
             <img class="rounded-md w-full h-3/6" src="images/5.png" />
           </div>
@@ -42,7 +42,7 @@
           <div
             class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
             James Robert</div>
-        </div>
+        </div> {% endcomment %}
 
       </div>
     </div>
@@ -50,7 +50,7 @@
 </section>
 
 <!-- Reviews -->
-<section id="testimonials" class="review-wraper section-bg  relative ">
+{% comment %} <section id="testimonials" class="review-wraper section-bg  relative ">
   <div class="mx-auto  rounded-xl overflow-hidden xl:mx-[55px] md:mx-[1px] ">
     <p
       class="lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
@@ -89,123 +89,43 @@
     <div class="swiper-button-prev1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
     <div class="swiper-button-next1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
   </div>
+</section> {% endcomment %}
+
+<section id="testimonials" class="review-wraper section-bg  relative">
+  <div class="mx-auto  rounded-xl overflow-hidden xl:mx-[55px] md:mx-[1px] ">
+      <p class="lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
+          HOD
+      </p>
+      <p class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
+          Mini Bazar
+      </p>
+  </div>
+  <div class="about-managment">
+      <div class="swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5">
+          <div class="swiper-wrapper" id="reviewsWrapper">
+              <!-- Customer reviews will be dynamically added here -->
+          </div>
+      </div>
+      <div class="swiper-button-prev1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
+      <div class="swiper-button-next1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
+  </div>
 </section>
+ <!-- branch -->
 
-
-<!-- branch -->
-
-<section class=" branch-wrapper ">
+ <section class=" branch-wrapper ">
   <div class="mx-auto rounded-xl overflow-hidden">
     <p
       class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold flex justify-center lg:py-10 md:py-8 sm:py-4 py-4 ">
       Branch
     </p>
-    <div class="md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]">
-      <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   " id="branchSection">
-        <div class="branches-img">
-          <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
-          <div class="branches-layer text-center">
-            <div
-              class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
-              <div
-                class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
-                Eagle Diamond
-                Institute
-              </div>
-            </div>
-            <div>
-              <ul>
-                <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Address&nbsp;:-</span>
-                  <sapn class="branch_address">
-                    &nbsp;185 - Angani Compelx, Mini
-                    Bazar, Varachha, Surat - 6.
-                  </sapn>
-                </li>
-                <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Contact :-</span>
-                  <span>&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
-                    &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   " id="branchSection2">
-        <div class="branches-img">
-          <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
-          <div class="branches-layer text-center">
-            <div
-              class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
-              <div
-                class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
-                Eagle Diamond
-                Institute Katargam
-              </div>
-            </div>
-            <div>
-              <ul>
-                <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Address&nbsp;:-</span>
-                  <sapn class="branch_address">
-                    &nbsp;185 - Angani Compelx, Mini
-                    Bazar, Varachha, Surat - 6.
-                  </sapn>
-                </li>
-                <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Contact :-</span>
-                  <span>&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
-                    &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3  " id="branchSection3">
-        <div class="branches-img">
-          <img class="rounded-md w-full h-3/6 branchImg" src="{% static '/images/1.png' %}" />
-          <div class="branches-layer text-center">
-            <div
-              class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
-              <div
-                class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
-                Eagle Diamond
-                Institute Katargam
-              </div>
-            </div>
-            <div>
-              <ul>
-                <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Address&nbsp;:-</span>
-                  <sapn class="branch_address">
-                    &nbsp;185 - Angani Compelx, Mini
-                    Bazar, Varachha, Surat - 6.
-                  </sapn>
-                </li>
-                <li
-                  class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
-                  <span>Contact :-</span>
-                  <span>&nbsp;<span class="branch_number_1">+91 986 278 953</span> <br />
-                    &nbsp;<span class="branch_number_2"> +0261 2658987<span></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div class="md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]" id="branchSection">
+      <!--  Add branch section -->
     </div>
   </div>
 </section>
+
+
+
 <script src="{% static '/script/cdn.tailwindcss.com_3.3.3' %}" rel="stylesheet"></script>
 <!-- header -->
 <script src="{% static '/script/unpkg.com_@themesberg_flowbite@1.1.1_dist_flowbite.bundle.js' %}"></script>
@@ -257,7 +177,7 @@
         spaceBetween: 30
       },
       1028: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 30
       },
       480: {
@@ -281,84 +201,109 @@
 
 
   //Founder API
-  fetch('/api/founder-details/') // Replace with the actual API URL
-    .then((response) => response.json())
-    .then((data) => {
-      //founder1
-      const founder1 = document.querySelector('#founder1')
-      founder1.querySelector('.founder_name').textContent = data.founder_details[0].founder_name
-      founder1.querySelector('.founder-img').src = data.founder_details[0].founder_image
-      //founder1
-      const founder2 = document.querySelector('#founder2')
-      founder2.querySelector('.founder_name').textContent = data.founder_details[1].founder_name
-      founder2.querySelector('.founder-img').src = data.founder_details[1].founder_image
-      //founder1
-      const founder3 = document.querySelector('#founder3')
-      founder3.querySelector('.founder_name').textContent = data.founder_details[2].founder_name
-      founder3.querySelector('.founder-img').src = data.founder_details[2].founder_image
+  fetch('/api/founder-details/')
+  .then((response) => response.json())
+  .then((data) => {
+      const foundersContainer = document.querySelector('.about-managment .mx-auto .flex-wrap');
 
-    })
-    .catch((error) => {
-      console.error(error, 'PPPPPPPPPPPPPPPPP')
-    })
+      // Iterate through founder details
+      data.founder_details.forEach((founder, index) => {
+          const founderElement = document.createElement('div');
+          founderElement.classList.add('p-4', 'w-full', 'md:w-1/2', 'lg:my-4', 'md:px-4', 'lg:w-1/3');
+          founderElement.id = `founder${index + 1}`;
 
+          founderElement.innerHTML = `
+              <div class="branches-img founder-img">
+                  <img class="rounded-md w-full h-3/6" src="${founder.founder_image}" />
+              </div>
+              <div class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
+                  ${founder.founder_name}
+              </div>
+          `;
+
+          foundersContainer.appendChild(founderElement);
+      });
+  })
+  .catch((error) => {
+      console.error(error, 'Error in API call');
+  });
 
   //Review API
   fetch('/api/review-details/')
-    .then((response) => response.json())
-    .then((data) => {
-      const reviewSection = document.querySelector('#reviewSection')
-      reviewSection.querySelector('.review_name').textContent = data.customer_review_details[0].customer_name
-      reviewSection.querySelector('.review_img').src = data.customer_review_details[0].customer_image
-      reviewSection.querySelector('.reviewDescription').textContent = data.customer_review_details[0].customer_review
-      const reviewSection2 = document.querySelector('#reviewSection2')
-      reviewSection2.querySelector('.review_name').textContent = data.customer_review_details[1].customer_name
-      reviewSection2.querySelector('.review_img').src = data.customer_review_details[1].customer_image
-      reviewSection2.querySelector('.reviewDescription').textContent = data.customer_review_details[1].customer_review
-      const reviewSection3 = document.querySelector('#reviewSection3')
-      reviewSection3.querySelector('.review_name').textContent = data.customer_review_details[2].customer_name
-      reviewSection3.querySelector('.review_img').src = data.customer_review_details[2].customer_image
-      reviewSection3.querySelector('.reviewDescription').textContent = data.customer_review_details[2].customer_review
-      const reviewSection4 = document.querySelector('#reviewSection4')
-      reviewSection4.querySelector('.review_name').textContent = data.customer_review_details[3].customer_name
-      reviewSection4.querySelector('.review_img').src = data.customer_review_details[3].customer_image
-      reviewSection4.querySelector('.reviewDescription').textContent = data.customer_review_details[3].customer_review
+                .then((response) => response.json())
+                .then((data) => {
+                    const reviewsWrapper = document.getElementById('reviewsWrapper');
 
-    })
-    .catch((error) => {
-      console.error(error)
-    })
+                    // Iterate through customer reviews
+                    data.customer_review_details.forEach((review, index) => {
+                        const reviewSection = document.createElement('div');
+                        reviewSection.classList.add('swiper-slide', 'w-[530px]', 'relative');
+                        reviewSection.id = `reviewSection${index + 1}`;
 
-  //Branch API
-  fetch('/api/branch-details/') // Replace with the actual API URL
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("HHHHHHHHH", data)
-      //section1
-      const branchSection = document.querySelector('#branchSection')
-      branchSection.querySelector('.branch_name').textContent = data.branch_details[0].branch_name
-      branchSection.querySelector('.branchImg').src = data.branch_details[0].branch_image
-      branchSection.querySelector('.branch_address').textContent = data.branch_details[0].branch_address
-      branchSection.querySelector('.branch_number_1').textContent = data.branch_details[0].branch_contact_number_1
-      branchSection.querySelector('.branch_number_2').textContent = data.branch_details[0].branch_contact_number_2
-      //section2
-      const branchSection2 = document.querySelector('#branchSection2')
-      branchSection2.querySelector('.branch_name').textContent = data.branch_details[1].branch_name
-      branchSection2.querySelector('.branchImg').src = data.branch_details[1].branch_image
-      branchSection2.querySelector('.branch_address').textContent = data.branch_details[1].branch_address
-      branchSection2.querySelector('.branch_number_1').textContent = data.branch_details[1].branch_contact_number_1
-      branchSection2.querySelector('.branch_number_2').textContent = data.branch_details[1].branch_contact_number_2
-      //section3
-      const branchSection3 = document.querySelector('#branchSection3')
-      branchSection3.querySelector('.branch_name').textContent = data.branch_details[2].branch_name
-      branchSection3.querySelector('.branchImg').src = data.branch_details[2].branch_image
-      branchSection3.querySelector('.branch_address').textContent = data.branch_details[2].branch_address
-      branchSection3.querySelector('.branch_number_1').textContent = data.branch_details[2].branch_contact_number_1
-      branchSection3.querySelector('.branch_number_2').textContent = data.branch_details[2].branch_contact_number_2
-    })
-    .catch((error) => {
-      console.error(error, 'PPPPPPPPPPPPPPPPP')
-    })
+                        reviewSection.innerHTML = `
+                            <div class="p-4">
+                                <img class="rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="${review.customer_image}" />
+                            </div>
+                            <!-- Add any additional elements for review details -->
+                        `;
+
+                        reviewsWrapper.appendChild(reviewSection);
+                    });
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+
+   //Branch API
+   fetch('/api/branch-details/') // Replace with the actual API URL
+   .then((response) => response.json())
+   .then((data) => {
+     const branchSection = document.querySelector("#branchSection");
+     if(data['message'] == "success"){
+       for(let i=0;i<=data['branch_details'].length;i++){
+         const branchSlider = document.createElement("div");
+         branchSlider.className = "p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   "
+         branchSlider.innerHTML = `
+             <div class="branches-img">
+               <img class="rounded-md w-full xl:h-[25rem] lg:h-[20rem]  md:h-[20rem] sm:h-[30rem] branchImg" src="${data['branch_details'][i]['branch_image']}" />
+               <div class="branches-layer text-center">
+                 <div
+                   class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
+                   <div
+                     class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
+                     ${data['branch_details'][i]['branch_name']}              
+                   </div>
+                 </div>
+                 <div>
+                   <ul>
+                     <li
+                       class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                       <span>Address&nbsp;:-</span>
+                       <sapn class="branch_address">
+                         &nbsp;${data['branch_details'][i]['branch_address']}
+                       </sapn>
+                     </li>
+                     <li
+                       class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                       <span>Contact :-</span>
+                       <span >&nbsp;<span class="branch_number_1">${data['branch_details'][i]['branch_contact_number_1']}</span> <br />
+                         &nbsp;<span class="branch_number_2">${data['branch_details'][i]['branch_contact_number_2']}<span></span>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+         `
+         branchSection.appendChild(branchSlider)
+       }
+       
+     }else{
+       console.log("Branch details api data is not found")
+     } 
+   })
+   .catch((error) => {
+     console.error(error, 'Branch details api is not working')
+   })
 </script>
 
 {% endblock %}
