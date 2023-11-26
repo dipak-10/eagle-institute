@@ -32,10 +32,6 @@
     display: none !important;
   }
 
-  .goog-te-gadget .goog-te-combo {
-    border: 1px solid black !important;
-  }
-
   body {
     top: 0 !important;
   }
@@ -58,65 +54,65 @@
 <body>
   <!-- header
    -->
-  <header>
-    <nav class="bg-white border-gray-200  drop-shadow">
-      <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img src="{% static '/images/logo.png' %}" class="mr-3" alt="Flowbite Logo" />
+ <header>
+    <nav class=" select-none bg-white border-gray-200  drop-shadow">
+      <div class=" select-none flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="http://127.0.0.1:8000/" class=" select-none flex items-center">
+          <img src="{% static '/images/logo.png' %}" class=" select-none mr-3" alt="Flowbite Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          class=" select-none inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <span class=" select-none sr-only">Open main menu</span>
+          <svg class=" select-none w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <div class=" select-none hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+            class=" select-none font-medium flex items-center flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
             <li>
               <a href="/"
-                class="block text-xl py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
+                class=" select-none block text-xl py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
                 aria-current="page">Home</a>
             </li>
-            <li class="dropdown">
+            <li class=" select-none dropdown">
               <a href="#"
-                class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About
-                Us <i class="fa-solid fa-angle-down ps-1"></i></a>
-              <div class="dropdown-menu shadow-lg">
+                class=" select-none block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About
+                Us <i class=" select-none fa-solid fa-angle-down ps-1"></i></a>
+              <div class=" select-none dropdown-menu shadow-lg">
                 <ul>
-                  <li class="py-2"><a href="/institute">Institute</a></li>
-                  <li class="py-2"><a href="/management">Mangement</a></li>
+                  <li class=" select-none py-2"><a href="/institute">Institute</a></li>
+                  <li class=" select-none py-2"><a href="/management">Mangement</a></li>
                 </ul>
               </div>
             </li>
-            <li class="dropdown">
+            <li class=" select-none dropdown">
               <a href="#"
-                class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Education
-                <i class="fa-solid fa-angle-down ps-1"></i></a>
-              <div class="dropdown-menu shadow-lg">
+                class=" select-none block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Education
+                <i class=" select-none fa-solid fa-angle-down ps-1"></i></a>
+              <div class=" select-none dropdown-menu shadow-lg">
                 <ul>
-                  <li class="py-2"><a href="/admission">Admission</a></li>
-                  <li class="py-2"><a href="/course">Course</a></li>
+                  <li class=" select-none py-2"><a href="/admission">Admission</a></li>
+                  <li class=" select-none py-2"><a href="/course">Course</a></li>
                 </ul>
               </div>
             </li>
 
-            <li>
+            {% comment %} <li>
               <a href="#"
-                class="block text-xl py-2 pl-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
-            </li>
-            <li class="inline-flex aligns-center">
-              <span class="w-[40px]" > <img src="{% static '/images/translate.png' %}" class="me-24" ></span>
+                class=" select-none block text-xl py-2 pl-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</a>
+            </li> {% endcomment %}
+            <li class=" select-none inline-flex aligns-center">
+              {% comment %} <span class=" select-none w-[40px]" > <img src="{% static '/images/translate.png' %}" class=" select-none me-24" ></span> {% endcomment %}
               <span>
                 <div id="google_translate_element"></div>
-                <span>
+                <span> 
             </li>
             <li>
               <button href="/login"
-                class="block text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border border-black py-1 px-3">
+                class=" select-none block text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border border-black py-1 px-3">
                 Sign in
               </button>
             </li>
@@ -126,33 +122,246 @@
     </nav>
   </header>
 
-  <div class="xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
-    <section class="w-full  ">
-      <div class="rounded-xl  w-full">
-        <div class="mx-auto rounded-xl overflow-hidden w-full ">
-          <div class="lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
+ <!---- <div>
+    <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-white border-gray-200  drop-shadow">
+      <div class=" px-6 mx-auto lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center justify-between flex-grow">
+            <div class="flex-shrink-0">
+              <a href="http://127.0.0.1:8000/" class=" select-none flex items-center">
+                <img src="{% static '/images/logo.png' %}" class=" select-none mr-3" alt="Logo" />
+              </a>
+            </div>
+            <div class="hidden lg:block">
+              <div class="flex items-center">
+
+                <a href="/"
+                  class="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium select-none block text-xl py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">
+
+                  <span class="ml-2">Home</span>
+                </a>
+               
+                <div class="relative" x-data="{ open: false}">
+                  <button @click="open = !open"
+                    class="flex flex-row items-center px-3 py-2 ml-4 text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+
+
+                    <span class="mx-2">About Us</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                      class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-down">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div @click.away="open = false" x-show="open" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opaity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
+                    <div class="py-1 bg-white rounded-md shadow-xs">
+                      <a href="/institute"
+                        class="flex flex-row items-center px-4 py-2 text-xl text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                        Institute
+                      </a>
+                      <a href="/management"
+                        class="flex flex-row items-center px-4 py-2 text-xl text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                        Mangement
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative" x-data="{ open: false}">
+                  <button @click="open = !open"
+                    class="flex flex-row items-center px-3 py-2 ml-4 text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+
+                    <span class="mx-2">Education</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                      class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-down">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div @click.away="open = false" x-show="open" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opaity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg">
+                    <div class="py-1 bg-white rounded-md shadow-xs">
+                      <a href="/admission"
+                        class="flex flex-row items-center px-4 py-2 text-xl text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                        Admission
+                      </a>
+                      <a href="/course"
+                        class="flex flex-row items-center px-4 py-2 text-xl text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                        Course
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+                <a 
+                class="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium select-none block text-xl py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">
+
+                <div id="google_translate_element"></div>
+              </a>
+              </div>
+            
+            </div>
+            
+          </div>
+          <div class="hidden lg:block">
+            <div class="flex items-center ml-4 md:ml-6">
+              <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
+                <div>
+                  <button @click="open = !open"
+                    class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid"
+                    id="user-menu" aria-label="User menu" aria-haspopup="true" x-bind:aria-expanded="open">
+                    <button href="/login"
+                      class="select-none block text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border border-black py-1 px-3">
+                      Sign in
+                    </button>
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex -mr-2 lg:hidden">
+            <button @click="open = !open"
+              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+              <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div :class="{'block': open, 'hidden': !open}" class="hidden lg:hidden">
+        <div class=" px-6 mx-auto">
+          <div class="pt-2 pb-3">
+
+            <a href="#"
+              class="flex flex-row items-center px-3 py-3 mt-1 text-base text-white  bg-blue-700 font-medium select-none block text-xl py-3 pl-3 pr-4 text-white bg-blue-700 rounded ">
+
+              <span class="ml-2 ">Home</span>
+            </a>
+            <div class="relative" x-data="{ open: false }">
+              <button @click="open = true"
+                class="flex flex-row items-center w-full px-3 py-2 mt-1 text-base text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 ">
+
+                <span class="mx-2">About Us</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div x-show="open" @click.away="open = false"
+                class="px-2 py-2 mt-2 bg-white rounded-md shadow-lg  shadow-black-500/50" role="menu"
+                aria-orientation="vertical" aria-labelledby="user-menu" role="menuitem">
+                <a href="/institute"
+                  class="flex flex-row items-center px-3 py-2 text-base text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 "
+                  role="menuitem">
+                  Institute
+                </a>
+                <a href="/management" class=" flex flex-row items-center px-3 py-2 mt-1 text-base text-xl select-none text-gray-900 rounded
+                  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 " role=" menuitem">
+                  Mangement
+                </a>
+
+              </div>
+            </div>
+
+            <div class="relative" x-data="{ open: false }">
+              <button @click="open = true"
+                class="flex flex-row items-center w-full px-3 py-2 mt-1 text-base text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 ">
+
+                <span class="mx-2">Education</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div x-show="open" @click.away="open = false"
+                class="px-2 py-2 mt-2 bg-white rounded-md shadow-lg  shadow-black-500/50" role="menu"
+                aria-orientation="vertical" aria-labelledby="user-menu" role="menuitem">
+                <a href="/admission"
+                  class="flex flex-row items-center px-3 py-2 text-base text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 "
+                  role="menuitem">
+                  Admission
+                </a>
+                <a href="/course"
+                  class="flex flex-row items-center px-3 py-2 mt-1 text-base text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 "
+                  role="menuitem">
+                  Course
+                </a>
+
+              </div>
+            </div>
+            
+              <div id="google_translate_element1"></div>
+            
+          </div>
+        </div>
+        <div class=" px-6 mx-auto">
+          <div x-data="{ open: false }" class="py-4 ">
+            <button @click="open = true" class="flex items-center w-full focus:outline-none">
+              <div class="flex items-center w-full text-left">
+                <button 
+                  class="select-none block text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border border-black py-1 px-3">
+                  <a href="/login">Sign in</a>
+                </button>
+              </div>
+
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>-->
+
+
+  {% comment %} <div class=" select-none xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
+    <section class=" select-none w-full  ">
+      <div class=" select-none rounded-xl  w-full">
+        <div class=" select-none mx-auto rounded-xl overflow-hidden w-full ">
+          <div class=" select-none lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
             <div
-              class="p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
+              class=" select-none p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
               <img
-                class="object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]"
+                class=" select-none object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]"
                 src="{% static '/images/banner-logo.png' %}" />
               <div
-                class="lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
+                class=" select-none lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
                 Eagle Dimond Institute
               </div>
 
-              <p class="mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
+              <p class=" select-none mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
                 Be silent in two situations When <span
-                  class="lg:inline-flex md:inline-flex sm:inline-flex hidden"><br /></span> you
+                  class=" select-none lg:inline-flex md:inline-flex sm:inline-flex hidden"><br /></span> you
                 feel one
               </p>
             </div>
-            <div class="md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
-              <div class="container">
+            <div class=" select-none md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
+              <div class=" select-none container">
                 <!-- Slider main container -->
-                <div class="swiper-container rounded-[26px]">
+                <div class=" select-none swiper-container rounded-[26px]">
                   <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper" id="bannerSection">
+                  <div class=" select-none swiper-wrapper" id="bannerSection">
                     <!-- Images add -->
                   </div>
                 </div>
@@ -162,12 +371,12 @@
         </div>
       </div>
     </section>
-  </div>
+  </div> {% endcomment %}
   {% block content %}{% endblock %}
   <!-- footer -->
-  <footer class="footer-wraper mt-5 p-10">
-    <div class=" mx-auto overflow-hidden ">
-      <div class="md:flex lg:mx-16 md:8" id="footer">
+  <footer class=" select-none footer-wraper mt-5 p-10">
+    <div class=" select-none  mx-auto overflow-hidden ">
+      <div class=" select-none md:flex lg:mx-16 md:8" id="footer">
 
       </div>
     </div>
@@ -182,37 +391,38 @@
         pageLanguage: 'en', // Default language (English)
         includedLanguages: 'gu,hi,en', // Specify the languages you want to be selectable (Gujarati, Hindi, English)
       },
-      'google_translate_element'
+      'google_translate_element','google_translate_element1'
     );
   }
 </script>
 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
+cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js">
 </script>
 <script>
   //Banner API
-  fetch('/api/banner-images/') // Replace with the actual API URL
-    .then((response) => response.json())
-    .then((data) => {
-      const bannerSection = document.querySelector('#bannerSection')
-      if (data['message'] == "success") {
-        for (let i = 0; i < data['banner_images'].length; i++) {
-          let Imageurl = data['banner_images'][i]["banner_images"];
-          const imageElement = document.createElement('img');
-          imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
-          imageElement.src = Imageurl;
-          bannerSection.appendChild(imageElement);
-        }
-      } else {
-        const imageElement = document.createElement('img');
-        imageElement.alt = "Not found image"
-        bannerSection.appendChild(imageElement);
-      }
-    })
-    .catch((error) => {
-      console.error(error, 'Banner image api error is')
-    })
+  //fetch('/api/banner-images/') // Replace with the actual API URL
+   // .then((response) => response.json())
+   // .then((data) => {
+  //    const bannerSection = document.querySelector('#bannerSection')
+    //  if (data['message'] == "success") {
+       // for (let i = 0; i < data['banner_images'].length; i++) {
+        //  let Imageurl = data['banner_images'][i]["banner_images"];
+        //  const imageElement = document.createElement('img');
+        //  imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
+       //   imageElement.src = Imageurl;
+       //   bannerSection.appendChild(imageElement);
+     //   }
+   //   } else {
+   //     const imageElement = document.createElement('img');
+   //     imageElement.alt = "Not found image"
+   //     bannerSection.appendChild(imageElement);
+   //   }
+  //  })
+   // .catch((error) => {
+   //   console.error(error, 'Banner image api error is')
+   // })
 
 
 
@@ -225,42 +435,42 @@ cb=googleTranslateElementInit">
         const footer = document.querySelector('#footer')
         // footer.querySelector('.about_us').textContent = data.footer_contact_details[0].about_us
         footer.innerHTML = `
-      <div class="lg:w-4/12 md:w-full pr-2">
-        <div class="md:flex items-center">
-          <img class="object-cover" src="{% static '/images/logo.png' %}" />
-          <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
+      <div class=" select-none lg:w-4/12 md:w-full pr-2">
+        <div class=" select-none md:flex items-center">
+          <img class=" select-none object-cover" src="{% static '/images/logo.png' %}" />
+          <div class=" select-none text-2xl text-white font-medium tracking-wide py-4 ps-4">
             Eagle Dimond Institute
           </div>
         </div>
-        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4">
+        <div class=" select-none text-2xl text-white font-medium tracking-wide py-4 ">
           About Us
         </div>
-        <p class="text-lg lg:pr-16 md:pr-0 about_us">
+        <p class=" select-none text-lg lg:pr-16 md:pr-0 about_us">
           ${data.footer_contact_details.about_us}
         </p>
       </div>
-      <div class="lg:w-4/12 md:w-full lg:ps-24 md:ps-0">
-        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
+      <div class=" select-none lg:w-4/12 md:w-full lg:ps-24 md:ps-0">
+        <div class=" select-none text-2xl text-white font-medium tracking-wide py-4  pt-8 md:flex items-center">
           Contact Us
         </div>
         <ul>
-          <li class="md:flex items-start py-2 text-lg">
-            <span class="pr-4"><i class="fa-sharp fa-solid fa-phone"></i>
+          <li class=" select-none md:flex items-start py-2 text-lg">
+            <span class=" select-none pr-4"><i class=" select-none fa-sharp fa-solid fa-phone"></i>
             </span>
             <span>${data.footer_contact_details.contact_number}</span>
           </li>
-          <li class="md:flex items-start py-2 text-lg">
-            <span class="pr-4"><i class="fa-sharp fa-solid fa-envelope"></i>
+          <li class=" select-none md:flex items-start py-2 text-lg">
+            <span class=" select-none pr-4"><i class=" select-none fa-sharp fa-solid fa-envelope"></i>
             </span>
             <span>${data.footer_contact_details.email_address}</span>
           </li>
-          <li class="md:flex items-start py-2 text-lg">
-            <span class="pr-4"><i class="fa-sharp fa-solid fa-location-dot"></i>
+          <li class=" select-none md:flex items-start py-2 text-lg">
+            <span class=" select-none pr-4"><i class=" select-none fa-sharp fa-solid fa-location-dot"></i>
             </span>
             <span>${data.footer_contact_details.address}</span>
           </li>
-          <li class="md:flex items-start py-2 text-lg">
-            <span class="pr-4"><i class="fa-solid fa-calendar-days"></i>
+          <li class=" select-none md:flex items-start py-2 text-lg">
+            <span class=" select-none pr-4"><i class=" select-none fa-solid fa-calendar-days"></i>
             </span>
             <span>
               <span>${data.footer_contact_details.time}</span>
@@ -268,16 +478,16 @@ cb=googleTranslateElementInit">
           </li>
         </ul>
       </div>
-      <div class="lg:w-4/12 md:w-full lg:ps-10 md:ps-0">
-        <div class="text-2xl text-white font-medium tracking-wide py-4 ps-4 pt-8 md:flex items-center">
+      <div class=" select-none lg:w-4/12 md:w-full lg:ps-10 md:ps-0">
+        <div class=" select-none text-2xl text-white font-medium tracking-wide py-4 pt-8 md:flex items-center">
           Social
         </div>
-        <div class="md:flex items-center py-2">
-          <a class="cursor-pointer" href="https://www.facebook.com/${data.social_links_data.facebook}" target="_blank"> <i class="fa-brands fa-facebook pr-4 text-2xl"></i></a>
-          <a class="cursor-pointer" href="https://twitter.com/${data.social_links_data.twitter}" target="_blank"> <i class="fa-brands fa-whatsapp pr-4 text-2xl"></i></a>
-          <a class="cursor-pointer" href="https://www.instagram.com/${data.social_links_data.instagram}" target="_blank"> <i class="fa-brands fa-twitter pr-4 text-2xl"></i></a>
-          <a class="cursor-pointer" href="https://wa.me/${data.social_links_data.whatsapp}" target="_blank"> <i class="fa-brands fa-instagram pr-4 text-2xl"></i></a>
-          <a class="cursor-pointer" href="https://www.youtube.com/c/${data.social_links_data.youtube}" target="_blank"> <i class="fa-brands fa-youtube pr-4 text-2xl"></i></a>
+        <div class=" select-none md:flex items-center py-2">
+          <a class=" select-none cursor-pointer" href="https://www.facebook.com/${data.social_links_data.facebook}" target="_blank"> <i class=" select-none fa-brands fa-facebook pr-4 text-2xl"></i></a>
+          <a class=" select-none cursor-pointer" href="https://twitter.com/${data.social_links_data.twitter}" target="_blank"> <i class=" select-none fa-brands fa-whatsapp pr-4 text-2xl"></i></a>
+          <a class=" select-none cursor-pointer" href="https://www.instagram.com/${data.social_links_data.instagram}" target="_blank"> <i class=" select-none fa-brands fa-twitter pr-4 text-2xl"></i></a>
+          <a class=" select-none cursor-pointer" href="https://wa.me/${data.social_links_data.whatsapp}" target="_blank"> <i class=" select-none fa-brands fa-instagram pr-4 text-2xl"></i></a>
+          <a class=" select-none cursor-pointer" href="https://www.youtube.com/c/${data.social_links_data.youtube}" target="_blank"> <i class=" select-none fa-brands fa-youtube pr-4 text-2xl"></i></a>
         </div>
       </div>
     `} else {

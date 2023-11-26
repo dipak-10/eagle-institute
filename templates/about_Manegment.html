@@ -2,123 +2,137 @@
 {% load static %}
 {% block content %}
 
+
+
+
+<!-- banner -->
+<div class=" select-none xl:py-16 lg:py-16 md:py-18 sm:py-15 py-12">
+  <section class=" select-none w-full  ">
+    <div class=" select-none rounded-xl  w-full">
+      <div class=" select-none mx-auto rounded-xl overflow-hidden w-full ">
+        <div class=" select-none lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
+          <div
+            class=" select-none p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-center">
+            <img
+              class=" select-none object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]"
+              src="{% static '/images/banner-logo.png' %}" />
+            <div
+              class=" select-none lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
+              About Management
+            </div>
+
+            
+          </div>
+          <div class=" select-none md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
+            <div class=" select-none container">
+              <!-- Slider main container -->
+              <div class=" select-none swiper-container rounded-[26px]">
+                <!-- Additional required wrapper -->
+                <div class=" select-none swiper-wrapper" id="bannerSection">
+                  <!-- Images add -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <!-- Courses -->
 <section>
-  <p
-    class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
+  {% comment %} <p
+    class=" select-none lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
     About Management
-  </p>
-  <div class="mx-auto rounded-xl overflow-hidden ">
+  </p> {% endcomment %}
+  <div class=" select-none mx-auto rounded-xl overflow-hidden ">
     <p
-      class="lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
+      class=" select-none lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-10 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
       Founder
     </p>
   </div>
 
-  <section class="about-managment">
-    <div class="mx-auto rounded-xl overflow-hidden">
+  <section class=" select-none about-managment">
+    <div class=" select-none mx-auto rounded-xl overflow-hidden">
       <div
-        class="md:flex justify-center flex-wrap  xl:mx-[45px] 2xl:mx-[50px] lg:mx-[30px] md:mx-[30px] sm:mx-[30px] mx-[25px] lg:py-8 md:py-8 sm:py-2 py-2">
-        {% comment %} <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3 " id="founder1">
-          <div class="branches-img founder-img">
-            <img class="rounded-md w-full h-3/6" src="images/5.png" />
-          </div>
-          <div
-            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
-            James Robert</div>
-        </div>
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4  lg:w-1/3" id="founder2">
-          <div class="branches-img founder-img">
-            <img class="rounded-md w-full h-3/6" src="images/5.png" />
-          </div>
-          <div
-            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
-            James Robert</div>
-        </div>
-        <div class="p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3  " id="founder3">
-          <div class="branches-img founder-img">
-            <img class="rounded-md w-full h-3/6" src="images/5.png" />
-          </div>
-          <div
-            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
-            James Robert</div>
-        </div> {% endcomment %}
-
+        class=" select-none md:flex justify-center flex-wrap  xl:mx-[45px] 2xl:mx-[50px] lg:mx-[30px] md:mx-[30px] sm:mx-[30px] mx-[25px] lg:py-8 md:py-8 sm:py-2 py-2">
+       
       </div>
     </div>
   </section>
 </section>
 
 <!-- Reviews -->
-{% comment %} <section id="testimonials" class="review-wraper section-bg  relative ">
-  <div class="mx-auto  rounded-xl overflow-hidden xl:mx-[55px] md:mx-[1px] ">
+{% comment %} <section id="testimonials" class=" select-none review-wraper section-bg  relative ">
+  <div class=" select-none mx-auto  rounded-xl overflow-hidden xl:mx-[55px] md:mx-[1px] ">
     <p
-      class="lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
+      class=" select-none lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
       HOD
     </p>
     <p
-      class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
+      class=" select-none lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
       Mini Bazar
     </p>
   </div>
-  <div class="about-managment">
-    <div class="swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide w-[530px] relative" id="reviewSection">
-          <div class="p-4">
-            <img class="rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
+  <div class=" select-none about-managment">
+    <div class=" select-none swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5">
+      <div class=" select-none swiper-wrapper">
+        <div class=" select-none swiper-slide w-[530px] relative" id="reviewSection">
+          <div class=" select-none p-4">
+            <img class=" select-none rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
           </div>
         </div>
-        <div class="swiper-slide w-[530px] relative" id="reviewSection2">
-          <div class="p-4">
-            <img class="rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
+        <div class=" select-none swiper-slide w-[530px] relative" id="reviewSection2">
+          <div class=" select-none p-4">
+            <img class=" select-none rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
           </div>
         </div>
-        <div class="swiper-slide w-[530px] relative" id="reviewSection3">
-          <div class="p-4">
-            <img class="rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
+        <div class=" select-none swiper-slide w-[530px] relative" id="reviewSection3">
+          <div class=" select-none p-4">
+            <img class=" select-none rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
           </div>
         </div>
-        <div class="swiper-slide w-[530px] relative" id="reviewSection4">
-          <div class="p-4">
-            <img class="rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
+        <div class=" select-none swiper-slide w-[530px] relative" id="reviewSection4">
+          <div class=" select-none p-4">
+            <img class=" select-none rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="images/5.png" />
           </div>
         </div>
       </div>
     </div>
-    <div class="swiper-button-prev1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
-    <div class="swiper-button-next1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
+    <div class=" select-none swiper-button-prev1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
+    <div class=" select-none swiper-button-next1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
   </div>
 </section> {% endcomment %}
 
-<section id="testimonials" class="review-wraper section-bg  relative">
-  <div class="mx-auto  rounded-xl overflow-hidden xl:mx-[55px] md:mx-[1px] ">
-      <p class="lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
+<section id="testimonials" class=" select-none review-wraper section-bg  relative">
+  <div class=" select-none mx-auto  rounded-xl overflow-hidden xl:mx-[55px] md:mx-[1px] ">
+      <p class=" select-none lg:text-[44px] md:text-[30px] sm:text-[35px] text-[28px] font-semibold flex xl:justify-left lg:justify-left  lg:py-12 md:py-8 sm:py-6 py-6 md:flex mx-16 ">
           HOD
       </p>
-      <p class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
+      <p class=" select-none lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px] font-semibold flex justify-center lg:py-10 md:py-8 sm:py-8 py-8">
           Mini Bazar
       </p>
   </div>
-  <div class="about-managment">
-      <div class="swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5">
-          <div class="swiper-wrapper" id="reviewsWrapper">
+  <div class=" select-none about-managment">
+      <div class=" select-none swiper mySwiper py-[45px] lg:mx-16 md:mx-10 sm:mx-8 mx-5">
+          <div class=" select-none swiper-wrapper" id="reviewsWrapper">
               <!-- Customer reviews will be dynamically added here -->
           </div>
       </div>
-      <div class="swiper-button-prev1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
-      <div class="swiper-button-next1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
+      <div class=" select-none swiper-button-prev1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
+      <div class=" select-none swiper-button-next1 lg:top-[71%] md:top-[72%] sm:top-[72%] top-[72%]"></div>
   </div>
 </section>
  <!-- branch -->
 
- <section class=" branch-wrapper ">
-  <div class="mx-auto rounded-xl overflow-hidden">
+ <section class=" select-none  branch-wrapper ">
+  <div class=" select-none mx-auto rounded-xl overflow-hidden">
     <p
-      class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold flex justify-center lg:py-10 md:py-8 sm:py-4 py-4 ">
+      class=" select-none lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold flex justify-center lg:py-10 md:py-8 sm:py-4 py-4 ">
       Branch
     </p>
-    <div class="md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]" id="branchSection">
+    <div class=" select-none md:flex justify-center flex-wrap  xl:mx-[40px] 2xl:mx-[40px] lg:py-8 md:py-8 sm:py-2 py-2 mx-[20px]" id="branchSection">
       <!--  Add branch section -->
     </div>
   </div>
@@ -213,10 +227,10 @@
           founderElement.id = `founder${index + 1}`;
 
           founderElement.innerHTML = `
-              <div class="branches-img founder-img">
-                  <img class="rounded-md w-full h-3/6" src="${founder.founder_image}" />
+              <div class=" select-none branches-img founder-img">
+                  <img class=" select-none rounded-md w-full h-3/6" src="${founder.founder_image}" />
               </div>
-              <div class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
+              <div class=" select-none lg:text-4xl md:text-3xl sm:text-2xl text-xl font-medium text-center lg:py-8 md:py-6 sm:py-4 lg:pt-10 md:pt-8 sm:pt-6 pt-4 course-title founder_name">
                   ${founder.founder_name}
               </div>
           `;
@@ -241,8 +255,8 @@
                         reviewSection.id = `reviewSection${index + 1}`;
 
                         reviewSection.innerHTML = `
-                            <div class="p-4">
-                                <img class="rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="${review.customer_image}" />
+                            <div class=" select-none p-4">
+                                <img class=" select-none rounded-md w-full lg:p-0 md:p-0 sm:p-0 p-4 review_img" src="${review.customer_image}" />
                             </div>
                             <!-- Add any additional elements for review details -->
                         `;
@@ -264,30 +278,30 @@
          const branchSlider = document.createElement("div");
          branchSlider.className = "p-4  w-full md:w-1/2 lg:my-4  md:px-4   lg:w-1/3   "
          branchSlider.innerHTML = `
-             <div class="branches-img">
-               <img class="rounded-md w-full xl:h-[25rem] lg:h-[20rem]  md:h-[20rem] sm:h-[30rem] branchImg" src="${data['branch_details'][i]['branch_image']}" />
-               <div class="branches-layer text-center">
+             <div class=" select-none branches-img">
+             <div class="branch-images xxl:h-[20rem] xl:h-[15rem] lg:h-[15rem]  md:h-[16rem] sm:h-[18rem] ">  <img class=" select-none  w-full xxl:h-[20rem] xl:h-[15rem] lg:h-[15rem]  md:h-[16rem] sm:h-[18rem] branchImg" src="${data['branch_details'][i]['branch_image']}" /></div>
+               <div class=" select-none branches-layer text-center ">
                  <div
-                   class="flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2 bg-black border-b-2 border-gray-100">
+                   class=" select-none flex justify-center items-center flex-col xl:p-4 lg:p-4 md:p-4 sm:p-2 p-1 xl:py-3 lg:py-2  border-b-2 border-gray-100">
                    <div
-                     class=" 2xl:text-4xl xl:text-3xl lg:text-lg text-[15px]  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
+                     class=" select-none  2xl:text-4xl xl:text-3xl lg:text-2xl text-xl  xl:py-1 2xl:py-4 lg:py-1 md:py-1 sm:py-1 py-0 branch_name">
                      ${data['branch_details'][i]['branch_name']}              
                    </div>
                  </div>
                  <div>
-                   <ul>
+                   <ul class="pb-[15px]">
                      <li
-                       class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                       class=" select-none 2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                        <span>Address&nbsp;:-</span>
-                       <sapn class="branch_address">
+                       <sapn class=" select-none branch_address">
                          &nbsp;${data['branch_details'][i]['branch_address']}
                        </sapn>
                      </li>
                      <li
-                       class="2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
+                       class=" select-none 2xl:text-[28px] xl:text-[14px] lg:text-[15px] md:text-[16px] sm:text-[16px] text-[12px] text-left px-4 pt-2 xl:px-8 lg:px-6 md:px-4 2xl:py-4 lg:py-1 md:py-1 xl:pt-3 lg:pt-2 flex items-start">
                        <span>Contact :-</span>
-                       <span >&nbsp;<span class="branch_number_1">${data['branch_details'][i]['branch_contact_number_1']}</span> <br />
-                         &nbsp;<span class="branch_number_2">${data['branch_details'][i]['branch_contact_number_2']}<span></span>
+                       <span >&nbsp;<span class=" select-none branch_number_1">${data['branch_details'][i]['branch_contact_number_1']}</span> <br />
+                         &nbsp;<span class=" select-none branch_number_2">${data['branch_details'][i]['branch_contact_number_2']}<span></span>
                      </li>
                    </ul>
                  </div>
@@ -304,6 +318,32 @@
    .catch((error) => {
      console.error(error, 'Branch details api is not working')
    })
+
+
+   //Banner API
+  fetch('/api/banner-images/') // Replace with the actual API URL
+  .then((response) => response.json())
+  .then((data) => {
+    const bannerSection = document.querySelector('#bannerSection')
+    if (data['message'] == "success") {
+      for (let i = 0; i < data['banner_images'].length; i++) {
+        let Imageurl = data['banner_images'][i]["banner_images"];
+        const imageElement = document.createElement('img');
+        imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
+        imageElement.src = Imageurl;
+        bannerSection.appendChild(imageElement);
+      }
+    } else {
+      const imageElement = document.createElement('img');
+      imageElement.alt = "Not found image"
+      bannerSection.appendChild(imageElement);
+    }
+  })
+  .catch((error) => {
+    console.error(error, 'Banner image api error is')
+  })
+
+
 </script>
 
 {% endblock %}
