@@ -9,6 +9,7 @@ urlpatterns = [
     path('', views.index),
     path('signup', views.signup),
     path('login', views.login),
+    path("blog",views.BlogPage),
     path("api/our-vision-details/", OurVisionDataAPIView.as_view(), name="our-vision-data"),
     path("api/review-details/", ReviewsDataAPIView.as_view(), name="review-data"),
     path("api/blog-details/", BlogDataAPIView.as_view(), name="blog-data"),
