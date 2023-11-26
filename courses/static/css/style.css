@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: url(../images/logo-t.png);
   background-size: cover;
@@ -13,6 +14,7 @@ body {
   background-attachment: fixed;
   font-family: "Jost", sans-serif;
 }
+
 .dropdown {
   position: relative;
 }
@@ -37,6 +39,7 @@ body {
   background-color: #eee9e3;
   position: relative;
 }
+
 .banner-left-side::after {
   content: "";
   background-image: url(../images/logo.png);
@@ -50,6 +53,7 @@ body {
   background-position: center;
   opacity: 0.1;
 }
+
 .banner-img {
   position: absolute;
   width: 35%;
@@ -57,29 +61,35 @@ body {
   right: 0px;
   border-radius: 10px;
 }
+
 .review-wraper .swiper-pagination-bullet {
   background-color: transparent !important;
 }
+
 .footer-wraper {
   background-color: #011c39;
   color: #99a4b0;
 }
+
 /* --------------------------------vision-------------------------------- */
 
 .vision-img img {
   height: 50%;
   width: 90%;
 }
+
 /* --------------------------------course-------------------------------- */
 .course-wraper {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 30px;
 }
+
 .course-img {
   position: relative;
   overflow: hidden;
 }
+
 .course-layer {
   position: absolute;
   top: 0px;
@@ -98,13 +108,16 @@ body {
   display: flex;
   opacity: 0;
 }
+
 .course-img:hover .course-layer {
   transform: translate(0px, 0px);
   opacity: 0.8;
 }
+
 .course-img:hover .course-title {
   color: #7b0048;
 }
+
 /* ----------------------------------blog---------------------------------- */
 .blog-box {
   background-color: #f8f2f6;
@@ -114,6 +127,7 @@ body {
   transition: all 0.3s linear;
   padding: 20px;
 }
+
 .readMore-btn {
   background-color: #7b0048;
   color: #fff;
@@ -121,59 +135,90 @@ body {
   font-weight: 500;
   border-radius: 6px;
 }
+
 .blog-contant {
   transition: all 0.5s linear;
   display: none;
 }
+
 .blog-title {
   color: #7b0048;
 }
+
 .blog-box:hover .blog-contant {
   display: inline-block;
 }
+
 .blog-box:hover .blog-img {
   transform: translate(0px, -80px);
   margin-bottom: -55px;
 }
+
 .blog-box:hover img {
   transform: scale(0.9);
 }
+
 .blog-box img {
   transition: all 0.5s linear;
 }
+
 .blog-box:hover {
   transform: translate(0px, 30px);
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 /* ----------------------------------branch ----------------------------------*/
 .branch-wrapper {
   background-color: #fafafa;
 }
+
 .branches-img {
   position: relative;
   overflow: hidden;
   /* height: 750px; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.branches-layer {
+.branch-images{
+  position: relative;
+}
+ .branch-images::after {
+  content: "";
   position: absolute;
   top: 0px;
   left: 0;
-  background-color: #160f08;
+  background-color: #000000;
+  opacity: 0;
   height: 100%;
   width: 100%;
-  border-radius: 6px;
-  color: #fff;
+  transition: all 0.5s linear;
+}
+
+.branches-layer {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  color: #000000;
   text-align: center;
   margin: 0 auto;
   transition: all 0.5s linear;
-  transform: translate(0px, 180px);
-  opacity: 0;
+  /* transform: translate(0px, 180px); */
+  /* opacity: 0; */
 }
+
+.branches-img:hover .branch-images::after {
+  opacity:0.5;
+
+}
+
 .branches-img:hover .branches-layer {
-  transform: translate(0px, 90px);
-  opacity: 0.8;
+  color: #ffffff;
+  background-color: #160f08;
+  /* transform: translate(0px, 90px); */
+  /* opacity: 0.8; */
 }
+
 /* -----------------------------Review----------------------------- */
 .review-box {
   background-color: #7b00480d;
@@ -182,56 +227,50 @@ body {
   margin: 30px;
   border-radius: 10px;
 }
-/* .review-img {
-  position: absolute;
-  top: -50px;
-  left: 37%;
-} */
+
 .review-box:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .swiper-button-prev,
 .swiper-button-next {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin-top: -16px;
 }
-.swiper-button-prev {
-  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)
-    no-repeat center center / contain;
-}
+
 .swiper-button-prev::after {
   content: "";
 }
 
-.swiper-button-next {
-  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper4.png)
-    no-repeat center center / contain;
+.swiper-button-next1 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NIFPOReHDDh7J3VwTt3Y0VmuVaVtRLfMQDZdyTNjZIMZ6dzQ6oRRdcuKJOfx5covOFI&usqp=CAU) no-repeat center center / contain;
 }
+
 .swiper-button-next::after {
   content: "";
 }
+
 .swiper-button-prev1,
 .swiper-button-next1 {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin-top: -16px;
 }
+
 .swiper-button-prev1 {
-  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)
-    no-repeat center center / contain;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAWlBMVEX///8jHyAGAAAAAAAYExQgHB0bFhc0MTK9vLzs7Ozm5uY6Nzhta2wxLi/z8/NzcXITDA75+fksKSqVlJRQTk9IRkcnIyQLAANfXV4uKitEQkPY19d4d3eamZl+8HxuAAAC40lEQVR4nO2di07CQBREuwKtLlbB9/P/f1MJKhTa7iaN6c5jPsD05M7tzLIGqsqyLEtc8WU79yP8r2KzeKBGjE912DwSI8ZQh8CMGJsd4Dciq1FjuwyBGXFv0R9ERqPGuwMgJeLvDgZWo8bXLiAd4vEOUho1tueAVFOMzbIHkAhxV9X6RWLUYUASxNOYoDPqoaqRIvbFxAni283cDzlF3arWq2VzNfdTTtD4DjIA5kwQ2aPpHUQH7K1qXcA1tEUHqtoxYAsNSG/RjJcMuEXZATNeMtg5mLGDLfQO8scEu0Vd1dAB+WPCVQ3coq5q6IBnly89FoUGdFVDt2jGiR7boiN3E3+A0BbNAFxDA9LHhKsaeky4qqED+kSPDuiqJhAT2BbNqWrQE6SPCV++oFc1/phgt6irGjogfUy4qqFb1Cd6dEBfvriqlS1fvsDHBD0gfUz48gU9JlzV0AF9okcHdFVDjwn6JuPLF3TAjKqGfVyir2oZn8lgW9SXL+gxQV/V6GOCvqrRW9QnenRA/58MelXziR7dovQnevoc5I8JVzVwi7qqoQPSf3Gcqxq6RdNVrYa26HaTnOCqxf4GztuLFGGoL+d+yGlKI66ewRGv04gLI5auDKMKIF6AI9qoIogCRhVA5Ddq4Ed0gStfaUQFowq8UQUQBYwqgGijFi8BRO9icIFDkACiQ0MEUcCoAogOjeIlgCiwixlT9C4WLwGjusCJIPIbVeHTcIdG8fK1jcYUHRrlS8CoLnAMUxRAdIELLnAIcoELGqEhgMhvVIVddGgULwFEgcOUQ4Nhig4NEaMKIPIbVWEXXeCKl0/9GlN0aJQvAaO6wDFMUQDRBS64wCHIBS5ohIYAIr9RvYvlS8CoAog+TAWRAvc+90NOU3KKi/u5H3GqEoj4gAmjMgCOInIAjhiVBXAQkQdwwKhMgL2IXIA9RmUDPEPkAzwxKiNgZ4qcgEeIrIBV9bH/jYLN56S/8gUZwz/8aL+OMQAAAABJRU5ErkJggg==) no-repeat center center / contain;
 }
+
 .swiper-button-prev1::after {
   content: "";
 }
 
-.swiper-button-next1 {
-  background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper4.png)
-    no-repeat center center / contain;
-}
+
 .swiper-button-next1::after {
   content: "";
 }
+
 /*---------------------------------------------- swiper slider---------------------------------------------- */
 .swiper-button-prev,
 .swiper-button-next,
@@ -240,20 +279,23 @@ body {
   width: 26px;
   height: 26px;
 }
+
 .swiper-button-prev {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   top: 60%;
   left: 10px;
 }
+
 .swiper-button-next {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   top: 60%;
   right: 10px;
 }
+
 .swiper-button-prev1,
 .swiper-button-next1,
 .swiper-container-rtl .swiper-button-next {
@@ -261,16 +303,18 @@ body {
   width: 26px;
   height: 26px;
 }
+
 .swiper-button-prev1 {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   top: 65%;
   left: 10px;
 }
+
 .swiper-button-next1 {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   top: 65%;
   right: 10px;
@@ -284,4 +328,36 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#google_translate_element {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+/* Style the dropdown button */
+.goog-te-combo {
+  /* appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;*/
+  padding: 4px !important;
+  font-size: 14px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+}
+
+.goog-te-combo option {
+  background-color: #fff !important;
+  color: #333 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  border: 1px solid #ffffff !important;
+  font-size: 19px !important;
+  font-weight: 500;
+  font-family: "Jost", sans-serif !important;
+  color: #111827;
+  margin: 4px 0 0 0 !important;
+  /* margin: 25px 0 0 0 !important; */
 }

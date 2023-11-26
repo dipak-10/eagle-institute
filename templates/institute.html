@@ -1,12 +1,51 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+
+
+
+
+
+<!-- banner -->
+<div class=" select-none xl:py-28 lg:py-26 md:py-18 sm:py-15 py-12">
+  <section class=" select-none w-full  ">
+    <div class=" select-none rounded-xl  w-full">
+      <div class=" select-none mx-auto rounded-xl overflow-hidden w-full ">
+        <div class=" select-none lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
+          <div
+            class=" select-none p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-center">
+            <img
+              class=" select-none object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]"
+              src="{% static '/images/banner-logo.png' %}" />
+            <div
+              class=" select-none lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
+              About Institute
+            </div>
+
+            
+          </div>
+          <div class=" select-none md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
+            <div class=" select-none container">
+              <!-- Slider main container -->
+              <div class=" select-none swiper-container rounded-[26px]">
+                <!-- Additional required wrapper -->
+                <div class=" select-none swiper-wrapper" id="bannerSection">
+                  <!-- Images add -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 <!-- section -->
-<section class="px-3 lg:mx-16 md:mx-10 sm:mx-8 mx-5">
-  <p class="lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold pt-8 text-center py-6">
+<section class=" select-none px-3 lg:mx-16 md:mx-10 sm:mx-8 mx-5">
+  {% comment %} <p class=" select-none lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold pt-8 text-center py-6">
     About Institute
-  </p>
-  <div class="  mx-auto rounded-xl overflow-hidden  " id="classroomSection">
+  </p> {% endcomment %}
+  <div class=" select-none   mx-auto rounded-xl overflow-hidden  " id="classroomSection">
     
   </div>
 </section>
@@ -95,14 +134,14 @@
           const classChildSection = document.createElement("div")
           classChildSection.className = "md:flex lg:py-10 md:py-8 sm:py-6 py-6"
           classChildSection.innerHTML = `
-            <div class="p-4 lg:w-3/6  md:w-full flex justify-center" id="imageElement">
-                <img class="rounded-md lg:w-11/12 md:w-full w-full classImg" src="${data['institute_details'][i]["institute_image"]}" />
+            <div class=" select-none p-4 lg:w-3/6  md:w-full flex justify-center" id="imageElement">
+                <img class=" select-none rounded-[26px] lg:w-11/12 md:w-full w-full classImg" src="${data['institute_details'][i]["institute_image"]}" />
             </div>
-            <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full" id="sectionElement">
+            <div class=" select-none lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full" id="sectionElement">
                 <p
-                  class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 class-title">
+                  class=" select-none lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 class-title">${data['institute_details'][i]["label"]}
                   </p>
-                <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4" id="Description">
+                <ul class=" select-none list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4" id="Description">
                   
                 </ul>
             </div>
@@ -136,6 +175,33 @@
       // Handle any errors that occur during the request
       console.error(error, 'Institute details api is not working')
     })
+
+
+
+    //Banner API
+  fetch('/api/banner-images/') // Replace with the actual API URL
+  .then((response) => response.json())
+  .then((data) => {
+    const bannerSection = document.querySelector('#bannerSection')
+    if (data['message'] == "success") {
+      for (let i = 0; i < data['banner_images'].length; i++) {
+        let Imageurl = data['banner_images'][i]["banner_images"];
+        const imageElement = document.createElement('img');
+        imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
+        imageElement.src = Imageurl;
+        bannerSection.appendChild(imageElement);
+      }
+    } else {
+      const imageElement = document.createElement('img');
+      imageElement.alt = "Not found image"
+      bannerSection.appendChild(imageElement);
+    }
+  })
+  .catch((error) => {
+    console.error(error, 'Banner image api error is')
+  })
+
+
 </script>
 
 {% endblock %}

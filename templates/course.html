@@ -2,65 +2,107 @@
 {% load static %}
 {% block content %}
 
- 
-  <!-- section -->
-  <section class="px-3 xl:mx-16 md:mx-8">
-    <p class="text-6xl font-semibold pt-8 text-center py-6">Course</p>
-    <div class="mx-auto rounded-xl overflow-hidden">
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6" id="manualPlanningSection">
-        <div class="p-4 lg:w-3/6 md:w-full flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full ManualImg" src="{% static './images/3.png' %}" />
+ <!-- banner -->
+<div class=" select-none xl:py-28 lg:py-26 md:py-18 sm:py-15 py-12">
+  <section class=" select-none w-full  ">
+    <div class=" select-none rounded-xl  w-full">
+      <div class=" select-none mx-auto rounded-xl overflow-hidden w-full ">
+        <div class=" select-none lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
+          <div
+            class=" select-none p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-center">
+            <img
+              class=" select-none object-cover 2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[90px] w-[90px]  2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[150px] sm:h-[90px] h-[90px]"
+              src="{% static '/images/banner-logo.png' %}" />
+            <div
+              class=" select-none lg:text-[52px] md:text-[45px] sm:text-[30px] text-[25px] text-[#011C39] font-bold py-4 text-left">
+             Course
+            </div>
+
+            
+          </div>
+          <div class=" select-none md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
+            <div class=" select-none container">
+              <!-- Slider main container -->
+              <div class=" select-none swiper-container rounded-[26px]">
+                <!-- Additional required wrapper -->
+                <div class=" select-none swiper-wrapper" id="bannerSection">
+                  <!-- Images add -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
-          <p class="Manual-title lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0"></p>
-          <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- section -->
+  {% comment %} <section class=" select-none px-3 xl:mx-16 md:mx-8">
+    <p class=" select-none text-6xl font-semibold pt-8 text-center py-6">Course</p>
+    <div class=" select-none mx-auto rounded-xl overflow-hidden">
+      <div class=" select-none md:flex lg:py-10 md:py-8 sm:py-6 py-6" id="manualPlanningSection">
+        <div class=" select-none p-4 lg:w-3/6 md:w-full flex justify-center">
+          <img class=" select-none rounded-md lg:w-11/12 md:w-full w-full ManualImg" src="{% static './images/3.png' %}" />
+        </div>
+        <div class=" select-none lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
+          <p class=" select-none Manual-title lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0"></p>
+          <ul class=" select-none list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
             <li></li>
-            <li class="py-3"></li>
+            <li class=" select-none py-3"></li>
             <li></li>
           </ul>
         </div>
       </div>
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="galaxySection">
-        <div class="lg:w-3/6 md:w-full order-last flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full galaxyImg" src="{% static './images/3.png' %}" />
+      <div class=" select-none md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="galaxySection">
+        <div class=" select-none lg:w-3/6 md:w-full order-last flex justify-center">
+          <img class=" select-none rounded-md lg:w-11/12 md:w-full w-full galaxyImg" src="{% static './images/3.png' %}" />
         </div>
-        <div class="lg:ps-8 ps-4 lg:w-3/6 md:w-full">
-          <p class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 galaxy-title"></p>
-          <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
+        <div class=" select-none lg:ps-8 ps-4 lg:w-3/6 md:w-full">
+          <p class=" select-none lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 galaxy-title"></p>
+          <ul class=" select-none list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
             <li></li>
-            <li class="py-3"></li>
+            <li class=" select-none py-3"></li>
             <li></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="mx-auto rounded-xl overflow-hidden" id="Microsection">
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6">
-        <div class="p-4 lg:w-3/6 md:w-full flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full micro-img" src="{% static './images/3.png' %}" />
+    <div class=" select-none mx-auto rounded-xl overflow-hidden" id="Microsection">
+      <div class=" select-none md:flex lg:py-10 md:py-8 sm:py-6 py-6">
+        <div class=" select-none p-4 lg:w-3/6 md:w-full flex justify-center">
+          <img class=" select-none rounded-md lg:w-11/12 md:w-full w-full micro-img" src="{% static './images/3.png' %}" />
         </div>
-        <div class="lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
-          <p class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 micro-title"></p>
-          <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
+        <div class=" select-none lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full">
+          <p class=" select-none lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 micro-title"></p>
+          <ul class=" select-none list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
             <li></li>
-            <li class="py-3"></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-      <div class="md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="lastGalaxySection">
-        <div class="lg:w-3/6 md:w-full order-last flex justify-center">
-          <img class="rounded-md lg:w-11/12 md:w-full w-full lastGalaxyImg" src="{% static './images/3.png' %}" />
-        </div>
-        <div class="lg:ps-8 ps-4 lg:w-3/6 md:w-full">
-          <p class="lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 lastGalaxyTitle"></p>
-          <ul class="list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
-            <li></li>
-            <li class="py-3"></li>
+            <li class=" select-none py-3"></li>
             <li></li>
           </ul>
         </div>
       </div>
+      <div class=" select-none md:flex lg:py-10 md:py-8 sm:py-6 py-6 md:pt-0" id="lastGalaxySection">
+        <div class=" select-none lg:w-3/6 md:w-full order-last flex justify-center">
+          <img class=" select-none rounded-md lg:w-11/12 md:w-full w-full lastGalaxyImg" src="{% static './images/3.png' %}" />
+        </div>
+        <div class=" select-none lg:ps-8 ps-4 lg:w-3/6 md:w-full">
+          <p class=" select-none lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px] font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 lastGalaxyTitle"></p>
+          <ul class=" select-none list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4">
+            <li></li>
+            <li class=" select-none py-3"></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> {% endcomment %}
+
+  <section class=" select-none px-3 lg:mx-16 md:mx-10 sm:mx-8 mx-5">
+    {% comment %} <p class=" select-none lg:text-[70px] md:text-[35px] sm:text-[20px] text-[30px]  font-semibold pt-8 text-center py-6">
+      Course
+    </p> {% endcomment %}
+    <div class=" select-none   mx-auto rounded-xl overflow-hidden  " id="classroomSection">
+      
     </div>
   </section>
   <script src="{% static '/script/cdn.tailwindcss.com_3.3.3' %}" rel="stylesheet"></script>
@@ -136,44 +178,82 @@
       }
     })
     
-    fetch('http://127.0.0.1:8000/api/course-details/') // Replace with the actual API URL
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data,"data is >>>>>>>>>>>>>>>>")
-        // Handle the API response data here
-        //manual Planning
-        const manualPlanningSection = document.querySelector('#manualPlanningSection')
-        manualPlanningSection.querySelector('.Manual-title').textContent = data.course_details[0].course_name
-        manualPlanningSection.querySelector('.ManualImg').src = data.course_details[0].course_image
-        manualPlanningSection.querySelector('li:nth-child(1)').textContent = data.course_details[0].course_description_line_1
-        manualPlanningSection.querySelector('li:nth-child(2)').textContent = data.course_details[0].course_description_line_2 // Update the second list item
-        manualPlanningSection.querySelector('li:nth-child(3)').textContent = data.course_details[0].course_description_line_3 // Update the third list item
-        //galaxy Section
-        const galaxySection = document.querySelector('#galaxySection')
-        galaxySection.querySelector('.galaxy-title').textContent = data.course_details[1].course_name // Update the title
-        galaxySection.querySelector('.galaxyImg').src = data.course_details[1].course_image // Update the title
-        galaxySection.querySelector('li:nth-child(1)').textContent = data.course_details[1].course_description_line_1 // Update the first list item
-        galaxySection.querySelector('li:nth-child(2)').textContent = data.course_details[1].course_description_line_2 // Update the second list item
-        galaxySection.querySelector('li:nth-child(3)').textContent = data.course_details[1].course_description_line_3 // Update the third list item
-        //Micro Section
-        const microSection = document.querySelector('#Microsection')
-        microSection.querySelector('.micro-title').textContent = data.course_details[2].course_name // Update the title
-        microSection.querySelector('.micro-img').src = data.course_details[2].course_image // Update the title
-        microSection.querySelector('li:nth-child(1)').textContent = data.course_details[2].course_description_line_1 // Update the first list item
-        microSection.querySelector('li:nth-child(2)').textContent = data.course_details[2].course_description_line_2 // Update the second list item
-        microSection.querySelector('li:nth-child(3)').textContent = data.course_details[2].course_description_line_3 // Update the third list item
-        //Last Galaxy Section
-        const lastGSection = document.querySelector('#lastGalaxySection')
-        lastGSection.querySelector('.lastGalaxyTitle').textContent = data.course_details[3].course_name // Update the title
-        lastGSection.querySelector('.lastGalaxyImg').src = data.course_details[3].course_image // Update the title
-        lastGSection.querySelector('li:nth-child(1)').textContent = data.course_details[3].course_description_line_1 // Update the first list item
-        lastGSection.querySelector('li:nth-child(2)').textContent = data.course_details[3].course_description_line_2 // Update the second list item
-        lastGSection.querySelector('li:nth-child(3)').textContent = data.course_details[3].course_description_line_3 // Update the third list item
-        console.log(data.course_details[3].course_image, 'data')
-      })
-      .catch((error) => {
-        // Handle any errors that occur during the request
-        console.error(error, 'PPPPPPPPPPPPPPPPP')
-      })
+
+      fetch('/api/course-details/') // Replace with the actual API URL
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data, "data is >>>>>>>>>>>>>>>.")
+      const classroomSection = document.querySelector('#classroomSection')
+      if (data['message'] == 'success') {
+        for (let i = 0; i <= data['course_details'].length; i++) {
+          const classChildSection = document.createElement("div")
+          classChildSection.className = "md:flex lg:py-10 md:py-8 sm:py-6 py-6"
+          classChildSection.innerHTML = `
+            <div class=" select-none p-4 lg:w-3/6  md:w-full flex justify-center" id="imageElement">
+                <img class=" select-none rounded-[26px] lg:w-11/12 md:w-full w-full classImg" src="${data['course_details'][i]["course_image"]}" />
+            </div>
+            <div class=" select-none lg:ps-0 md:ps-2 sm:ps-8 ps-4 lg:w-3/6 md:w-full" id="sectionElement">
+                <p
+                  class=" select-none lg:text-[30px] md:text-[28px] sm:text-[22px] text-[24px]  font-semibold lg:pt-8 md:pt-4 sm:pt-2 pt-0 class-title">${data['course_details'][i]["course_name"]}
+                  </p>
+                <ul class=" select-none list-disc lg:text-xl md:text-md text-md font-medium tracking-wide p-4" id="Description">
+                  
+                </ul>
+            </div>
+          `;
+          let Description = classChildSection.querySelector("#Description");
+          for (let no = 1; no <= 4; no++) {
+            const descriptionLine = data['course_details'][i][`course_description_line_${no}`];
+            if (descriptionLine) {
+                const listItem = document.createElement('li');
+                listItem.textContent = descriptionLine;
+                if (no === 2) {
+                    listItem.className = 'py-3'
+                }
+                Description.appendChild(listItem);
+            }
+          }
+          if (i % 2 !== 0) {
+              classChildSection.classList.add("md:w-full");
+              let imageElement = classChildSection.querySelector("#imageElement");
+              imageElement.className = "lg:w-3/6  md:w-full order-last flex justify-center"
+              let sectionElement = classChildSection.querySelector("#sectionElement");
+              sectionElement.className = "lg:ps-8  ps-4 lg:w-3/6  md:w-full "
+          }
+          classroomSection.appendChild(classChildSection);
+        }
+      }else{
+        console.log("Course details data is not found")
+      }
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the request
+      console.error(error, 'Course details api is not working')
+    })
+
+    //Banner API
+  fetch('/api/banner-images/') // Replace with the actual API URL
+  .then((response) => response.json())
+  .then((data) => {
+    const bannerSection = document.querySelector('#bannerSection')
+    if (data['message'] == "success") {
+      for (let i = 0; i < data['banner_images'].length; i++) {
+        let Imageurl = data['banner_images'][i]["banner_images"];
+        const imageElement = document.createElement('img');
+        imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
+        imageElement.src = Imageurl;
+        bannerSection.appendChild(imageElement);
+      }
+    } else {
+      const imageElement = document.createElement('img');
+      imageElement.alt = "Not found image"
+      bannerSection.appendChild(imageElement);
+    }
+  })
+  .catch((error) => {
+    console.error(error, 'Banner image api error is')
+  })
+
+
   </script>
 {% endblock %}
