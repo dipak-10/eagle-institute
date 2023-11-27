@@ -31,3 +31,14 @@ class BranchDataAPIView(APIView):
                  "branch_details": branch_details_serializer.data},
                 status=status.HTTP_200_OK,
             )
+
+class HodDataApiView(APIView):
+    def get(self, request):
+        hod_details = HodDetailsModel.objects.all()
+        hod_details_serializer = HodDetailsSerializer(
+                hod_details, many=True)
+        return Response(
+                {"message": "success", 
+                 "hod_details": hod_details_serializer.data},
+                status=status.HTTP_200_OK,
+            )

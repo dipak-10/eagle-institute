@@ -17,6 +17,8 @@ def signup(request):
 def login(request):
     return render(request, "login.html")
 
+def BlogPage(request):
+    return render(request,"blog.html")
 
 class OurVisionDataAPIView(APIView):
 
@@ -52,7 +54,7 @@ class BlogDataAPIView(APIView):
                  "blog_details": blog_details_serializer.data},
                 status=status.HTTP_200_OK,
             )
-    
+
 class BannerImagesDataAPIView(APIView):
 
     def get(self, request):
