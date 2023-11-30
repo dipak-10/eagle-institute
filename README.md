@@ -2,7 +2,7 @@
 
 Step 1 -- Activate Virtual Environment
 
-.\venv\Scripts\activate
+.\venv\Scripts\activate ||.\env\Scripts\activate  
 
 Step 2 -- Head into the main directory
 

@@ -32,6 +32,10 @@
     display: none !important;
   }
 
+  .goog-te-gadget .goog-te-combo {
+    /* margin: 25px 0 0 0 !important; */
+  }
+
   body {
     top: 0 !important;
   }
@@ -57,8 +61,8 @@
   <!----<header>
     <nav class=" select-none bg-white border-gray-200  drop-shadow">
       <div class=" select-none flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="http://127.0.0.1:8000/" class=" select-none flex items-center">
-          <img src="{% static '/images/logo.png' %}" class=" select-none mr-3" alt="Flowbite Logo" />
+        <a href="/" class=" select-none flex items-center">
+          <img src="{% static '/images/logo.png' %}" class=" select-none mr-3" alt="Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
           class=" select-none inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
@@ -122,13 +126,13 @@
     </nav>
   </header>-->
 
- <div>
+  <div>
     <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-white border-gray-200  drop-shadow">
       <div class=" px-6 mx-auto lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center justify-between flex-grow">
             <div class="flex-shrink-0">
-              <a href="http://127.0.0.1:8000/" class=" select-none flex items-center">
+              <a href="/" class=" select-none flex items-center">
                 <img src="{% static '/images/logo.png' %}" class=" select-none mr-3" alt="Logo" />
               </a>
             </div>
@@ -140,7 +144,7 @@
 
                   <span class="ml-2">Home</span>
                 </a>
-               
+
                 <div class="relative" x-data="{ open: false}">
                   <button @click="open = !open"
                     class="flex flex-row items-center px-3 py-2 ml-4 text-xl  select-none text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
@@ -207,15 +211,13 @@
                     </div>
                   </div>
                 </div>
-                <a 
-                class="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium select-none block text-xl py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">
-
-                <div id="google_translate_element"></div>
-              </a>
+                <a class="xl:block lg:hidden">
+                  <div id="google_translate_element"></div>
+                </a>
               </div>
-            
+
             </div>
-            
+
           </div>
           <div class="hidden lg:block">
             <div class="flex items-center ml-4 md:ml-6">
@@ -310,17 +312,19 @@
                 </a>
 
               </div>
-              <div id="google_translate_element1"></div>
+
             </div>
-            
-            
+            <div class=" xl:hidden lg:block">
+              <div id="google_translate_element"></div>
+            </div>
+
           </div>
         </div>
         <div class=" px-6 mx-auto">
           <div x-data="{ open: false }" class="py-4 ">
             <button @click="open = true" class="flex items-center w-full focus:outline-none">
               <div class="flex items-center w-full text-left">
-                <button 
+                <button
                   class="select-none block text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border border-black py-1 px-3">
                   <a href="/login">Sign in</a>
                 </button>
@@ -335,11 +339,12 @@
   </div>
 
 
-  {% comment %} <div class=" select-none xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
+  <!--<div class=" select-none xl:py-36 lg:py-26 md:py-18 sm:py-15 py-12">
     <section class=" select-none w-full  ">
       <div class=" select-none rounded-xl  w-full">
         <div class=" select-none mx-auto rounded-xl overflow-hidden w-full ">
-          <div class=" select-none lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5" style="text-align: -webkit-center;">
+          <div class=" select-none lg:flex justify-center  lg:mx-16 md:mx-10 sm:mx-8 mx-5"
+            style="text-align: -webkit-center;">
             <div
               class=" select-none p-8 banner-left-side xl:w-3/5 lg:w-full lg:flex-[auto] md:w-full lg:rounded-l-[26px] md:rounded-l-[26px] sm:rounded-[26px]  rounded-[26px] my-4 lg:ps-24 md:ps-16  flex  flex-col justify-center items-start">
               <img
@@ -350,7 +355,8 @@
                 Eagle Dimond Institute
               </div>
 
-              <p class=" select-none mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
+              <p
+                class=" select-none mt-2 lg:text-[32px] md:text-[28px] sm:text-[20px] text-[22px] text-[#011C39] text-left">
                 Be silent in two situations When <span
                   class=" select-none lg:inline-flex md:inline-flex sm:inline-flex hidden"><br /></span> you
                 feel one
@@ -358,11 +364,11 @@
             </div>
             <div class=" select-none md:shrink-0 xl:w-2/5 lg:w-full lg:flex-[auto] md:w-full">
               <div class=" select-none container">
-                <!-- Slider main container -->
+                Slider main container
                 <div class=" select-none swiper-container rounded-[26px]">
-                  <!-- Additional required wrapper -->
+                  Additional required wrapper
                   <div class=" select-none swiper-wrapper" id="bannerSection">
-                    <!-- Images add -->
+                    Images add
                   </div>
                 </div>
               </div>
@@ -371,7 +377,7 @@
         </div>
       </div>
     </section>
-  </div> {% endcomment %}
+  </div> -->
   {% block content %}{% endblock %}
   <!-- footer -->
   <footer class=" select-none footer-wraper mt-5 p-10">
@@ -403,26 +409,26 @@ cb=googleTranslateElementInit"></script>
 <script>
   //Banner API
   //fetch('/api/banner-images/') // Replace with the actual API URL
-   // .then((response) => response.json())
-   // .then((data) => {
+  // .then((response) => response.json())
+  // .then((data) => {
   //    const bannerSection = document.querySelector('#bannerSection')
-    //  if (data['message'] == "success") {
-       // for (let i = 0; i < data['banner_images'].length; i++) {
-        //  let Imageurl = data['banner_images'][i]["banner_images"];
-        //  const imageElement = document.createElement('img');
-        //  imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
-       //   imageElement.src = Imageurl;
-       //   bannerSection.appendChild(imageElement);
-     //   }
-   //   } else {
-   //     const imageElement = document.createElement('img');
-   //     imageElement.alt = "Not found image"
-   //     bannerSection.appendChild(imageElement);
-   //   }
+  //  if (data['message'] == "success") {
+  // for (let i = 0; i < data['banner_images'].length; i++) {
+  //  let Imageurl = data['banner_images'][i]["banner_images"];
+  //  const imageElement = document.createElement('img');
+  //  imageElement.className = `w-full object-fill w-1/2 lg:h-[35rem] md:h-[28rem] sm:h-[25rem] h-[18rem]  rounded-lg swiper-slide bannerImg${i}`;
+  //   imageElement.src = Imageurl;
+  //   bannerSection.appendChild(imageElement);
+  //   }
+  //   } else {
+  //     const imageElement = document.createElement('img');
+  //     imageElement.alt = "Not found image"
+  //     bannerSection.appendChild(imageElement);
+  //   }
   //  })
-   // .catch((error) => {
-   //   console.error(error, 'Banner image api error is')
-   // })
+  // .catch((error) => {
+  //   console.error(error, 'Banner image api error is')
+  // })
 
 
 
