@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 * {
   margin: 0;
   padding: 0;
@@ -359,4 +363,10 @@ body {
   font-family: "Jost", sans-serif !important;
   color: #111827;
   margin-top: 10px !important;
+}
+.goog-te-combo:focus-visible {
+  border-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  border-width: 0px !important;
 }
